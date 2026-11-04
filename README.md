@@ -28,3 +28,4 @@ also the books kindly provided by Kiriakos Kazantzidis (Wilson, Reynolds and Wil
 Every record keeps its own sources. Map: Natural Earth.
 
 Files: `index.html` 141 KB, `data/collections.js` 91 KB, `data/editions.js` 306 KB, `data/geo.js` 71 KB, `data/key.js` 82 KB, `data/manuscripts.js` 2.3 MB, `data/map.js` 39 KB, `data/meta.js` 3 KB, `data/people.js` 183 KB, `dl/greeks-who-taught-greek-data.json` 6.5 MB, `dl/greeks-who-taught-greek-editions.csv` 191 KB, `dl/greeks-who-taught-greek-events.csv` 1.3 MB, `dl/greeks-who-taught-greek-key-manuscripts.csv` 66 KB, `dl/greeks-who-taught-greek-manuscripts.csv` 4.3 MB, `dl/greeks-who-taught-greek-people.csv` 132 KB, `dl/greeks-who-taught-greek.xlsx` 2.3 MB, `thumb/og.jpg` 104 KB.
+
