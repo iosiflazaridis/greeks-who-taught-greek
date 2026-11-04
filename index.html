@@ -1,0 +1,1153 @@
+<!doctype html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1, viewport-fit=cover">
+<title>The Greeks Who Taught Greek to the West, 1340s–1600</title>
+<meta name="description" content="The Greeks who taught Greek to Latin Europe, 1340s–1600: 126 teachers, scribes and editors, 8,232 Greek manuscripts documented in the West by 1600, 52 collectors and 419 first editions, on an interactive map with the full lists. Version 0.9, work in progress.">
+<meta property="og:type" content="website">
+<meta property="og:title" content="The Greeks Who Taught Greek to the West, 1340s–1600">
+<meta property="og:description" content="The Greeks who taught Greek to Latin Europe, 1340s–1600: 126 teachers, scribes and editors, 8,232 Greek manuscripts documented in the West by 1600, 52 collectors and 419 first editions, on an interactive map with the full lists. Version 0.9, work in progress.">
+<meta property="og:url" content="https://iosiflazaridis.github.io/greeks-who-taught-greek/">
+<meta property="og:image" content="https://iosiflazaridis.github.io/greeks-who-taught-greek/thumb/og.jpg">
+<meta property="og:image:width" content="1200">
+<meta property="og:image:height" content="630">
+<meta name="twitter:card" content="summary_large_image">
+<meta name="twitter:title" content="The Greeks Who Taught Greek to the West, 1340s–1600">
+<meta name="twitter:description" content="The Greeks who taught Greek to Latin Europe, 1340s–1600: 126 teachers, scribes and editors, 8,232 Greek manuscripts documented in the West by 1600, 52 collectors and 419 first editions, on an interactive map with the full lists. Version 0.9, work in progress.">
+<meta name="twitter:image" content="https://iosiflazaridis.github.io/greeks-who-taught-greek/thumb/og.jpg">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Marcellus&family=Gentium+Book+Plus:ital,wght@0,400;0,700;1,400&family=IBM+Plex+Sans+Condensed:ital,wght@0,400;0,500;0,600;1,400&display=swap">
+<style>
+/* series stylesheet (from the Greek Cities sites) */
+
+/* Layout: one reading column (max 1240px) of stacked sections; the map section is a two-pane explorer that stacks on phones. */
+:root {
+  --bg: #eceee9; --paper: #f7f7f3; --ink: #1b2230; --ink-2: #464e5c; --muted: #6b727d; --rule: #d0d4cc; --chip: #e2e6df;
+  --sea: #d3dfe3; --sea-ink: #5f7d88; --land: #fbfbf7; --land2: #e4e7e0; --coast: #95a2a7; --border: #b7bdb4; --old: #b4b9bd; --bar: #7d8590;
+  --hi: #e6eaf2; --focus: #2a78d6;
+  --mig: #2a78d6; --lat: #2a78d6; --col: #1baf7a; --roy: #4a3aa7; --rom: #b23a78; --nat: #eb6834; --grw: #876114; --bil: #c99700;
+  --display: "Marcellus", Georgia, "Times New Roman", serif;
+  --body: "Gentium Book Plus", Georgia, "Times New Roman", serif;
+  --ui: "IBM Plex Sans Condensed", "Arial Narrow", "Helvetica Neue", Arial, sans-serif;
+}
+@media (prefers-color-scheme: dark) { :root:not([data-theme="light"]) {
+  --bg: #13171d; --paper: #1a2028; --ink: #e8eae5; --ink-2: #c4c9d0; --muted: #8f97a1; --rule: #2d343e; --chip: #252c36;
+  --sea: #1a2a33; --sea-ink: #7fa2ae; --land: #2a3039; --land2: #20252c; --coast: #4e5b62; --border: #4a525c; --old: #59616a; --bar: #8a929c;
+  --hi: #243246; --focus: #5ea1ec;
+  --mig: #4b93e6; --lat: #4b93e6; --col: #2fc48e; --roy: #8d7ff0; --rom: #d65a9e; --nat: #f2804f; --grw: #c0902f; --bil: #e0b43a; color-scheme: dark; } }
+:root[data-theme="dark"] {
+  --bg: #13171d; --paper: #1a2028; --ink: #e8eae5; --ink-2: #c4c9d0; --muted: #8f97a1; --rule: #2d343e; --chip: #252c36;
+  --sea: #1a2a33; --sea-ink: #7fa2ae; --land: #2a3039; --land2: #20252c; --coast: #4e5b62; --border: #4a525c; --old: #59616a; --bar: #8a929c;
+  --hi: #243246; --focus: #5ea1ec;
+  --mig: #4b93e6; --lat: #4b93e6; --col: #2fc48e; --roy: #8d7ff0; --rom: #d65a9e; --nat: #f2804f; --grw: #c0902f; --bil: #e0b43a; color-scheme: dark; }
+* { box-sizing: border-box; }
+[hidden] { display: none !important; }
+body { background: var(--bg); color: var(--ink); font-family: var(--body); font-size: 17px; line-height: 1.55; margin: 0; }
+.wrap { max-width: 1240px; margin: 0 auto; padding-inline: 20px; padding-block: 0 48px; }
+a { color: inherit; }
+:focus-visible { outline: 2px solid var(--focus); outline-offset: 2px; }
+h1, h2, h3 { font-family: var(--display); font-weight: 400; text-wrap: balance; margin: 0; letter-spacing: 0.005em; }
+h1 { font-size: clamp(34px, 5.4vw, 60px); line-height: 1.04; }
+h2 { font-size: clamp(26px, 3.4vw, 36px); line-height: 1.1; }
+h3 { font-size: 21px; }
+p { margin: 0; }
+.ui { font-family: var(--ui); }
+.eyebrow { font-family: var(--ui); font-size: 13px; letter-spacing: 0.14em; text-transform: uppercase; color: var(--muted); display: flex; gap: 12px; align-items: baseline; flex-wrap: wrap; }
+.eyebrow .gk { font-family: var(--body); text-transform: none; letter-spacing: 0.02em; font-size: 19px; color: var(--ink-2); }
+.label { font-family: var(--ui); font-size: 12.5px; font-weight: 600; letter-spacing: 0.1em; text-transform: uppercase; color: var(--ink-2); }
+.num { font-variant-numeric: tabular-nums; }
+
+/* header */
+header.top { padding-block: 34px 18px; display: grid; gap: 14px; }
+.lede { font-size: 20px; color: var(--ink-2); max-width: 62ch; }
+.facts { display: grid; grid-template-columns: repeat(4, minmax(0, 1fr)); gap: 0; border-top: 1px solid var(--rule); border-bottom: 1px solid var(--rule); margin-top: 10px; }
+.fact { padding: 14px 16px 14px 0; display: grid; gap: 2px; min-width: 0; }
+.fact + .fact { padding-left: 16px; border-left: 1px solid var(--rule); }
+.fact b { font-family: var(--ui); font-size: 34px; font-weight: 600; line-height: 1.05; font-variant-numeric: tabular-nums; }
+.fact span { font-family: var(--ui); font-size: 14.5px; color: var(--ink-2); line-height: 1.35; }
+nav.sec { position: sticky; top: env(safe-area-inset-top, 0px); z-index: 20; background: var(--bg); border-bottom: 1px solid var(--rule); }
+nav.sec .in { max-width: 1240px; margin: 0 auto; padding-inline: 20px; display: flex; gap: 4px 20px; flex-wrap: wrap; padding-block: 9px; font-family: var(--ui); font-size: 14.5px; }
+nav.sec a { text-decoration: none; color: var(--ink-2); }
+nav.sec a:hover { color: var(--ink); text-decoration: underline; text-underline-offset: 3px; }
+section { padding-top: 40px; display: grid; gap: 16px; scroll-margin-top: 50px; }
+.intro { max-width: 70ch; color: var(--ink-2); }
+
+/* map explorer */
+.explorer { display: grid; grid-template-columns: minmax(0, 1fr) 330px; gap: 22px; align-items: start; }
+.mapcol { display: grid; gap: 10px; min-width: 0; }
+.tabs { display: flex; gap: 6px; flex-wrap: wrap; }
+.tab { font-family: var(--ui); font-size: 14px; border: 1px solid var(--rule); background: var(--paper); color: var(--ink-2); border-radius: 999px; padding: 5px 12px; cursor: pointer; }
+.tab[aria-pressed="true"] { background: var(--ink); color: var(--bg); border-color: var(--ink); }
+.tab.play { display: inline-flex; align-items: center; gap: 6px; }
+.mapbox { position: relative; border: 1px solid var(--rule); border-radius: 6px; overflow: hidden; background: var(--sea); touch-action: none; }
+.mapbox svg { display: block; width: 100%; height: auto; cursor: grab; user-select: none; }
+.mapbox svg.drag { cursor: grabbing; }
+.m-land { fill: var(--land2); stroke: var(--coast); stroke-width: 0.6; vector-effect: non-scaling-stroke; }
+.m-tr { fill: var(--land); stroke: var(--coast); stroke-width: 0.6; vector-effect: non-scaling-stroke; }
+.m-bo { fill: none; stroke: var(--border); stroke-width: 0.8; stroke-dasharray: 3 2.5; vector-effect: non-scaling-stroke; }
+.m-ct { font-family: var(--ui); fill: var(--muted); letter-spacing: 0.24em; }
+.m-sea { font-family: var(--body); font-style: italic; fill: var(--sea-ink); letter-spacing: 0.05em; }
+.m-lab { font-family: var(--ui); fill: var(--ink); font-weight: 500; paint-order: stroke; stroke: var(--land); stroke-linejoin: round; pointer-events: none; }
+.m-lab.f3 { font-weight: 600; }
+.m-sel { fill: none; stroke: var(--ink); pointer-events: none; }
+.zoom { position: absolute; right: 8px; top: 8px; display: grid; gap: 4px; }
+.zoom button { width: 32px; height: 32px; border-radius: 6px; border: 1px solid var(--rule); background: var(--paper); color: var(--ink); font-family: var(--ui); font-size: 18px; cursor: pointer; line-height: 1; }
+.zoom button.txt { width: auto; font-size: 12.5px; padding: 0 8px; }
+.tip { position: absolute; pointer-events: none; background: var(--paper); color: var(--ink); border: 1px solid var(--rule); border-radius: 5px; padding: 5px 8px; font-family: var(--ui); font-size: 13.5px; line-height: 1.3; box-shadow: 0 2px 8px rgba(0,0,0,0.12); max-width: 260px; }
+.tip b { font-family: var(--body); font-size: 15px; }
+.tip .g { font-family: var(--body); color: var(--ink-2); }
+.hint { font-family: var(--ui); font-size: 13px; color: var(--muted); }
+.tl { border: 1px solid var(--rule); border-radius: 6px; background: var(--paper); }
+.tl svg { display: block; width: 100%; height: auto; }
+.tl text { font-family: var(--ui); }
+.side { display: grid; gap: 12px; min-width: 0; }
+.ptitle { font-family: var(--display); font-size: 24px; line-height: 1.15; }
+.pcap { font-family: var(--ui); font-size: 14.5px; color: var(--ink-2); line-height: 1.45; }
+.pcap b { color: var(--ink); font-weight: 600; }
+.total { font-family: var(--ui); font-size: 14.5px; color: var(--ink-2); }
+.total b { font-size: 28px; color: var(--ink); font-weight: 600; margin-right: 4px; font-variant-numeric: tabular-nums; }
+.bars { display: grid; gap: 4px; }
+.brow { display: grid; grid-template-columns: minmax(0, 1fr) 104px; gap: 8px; align-items: center; font-family: var(--ui); font-size: 14px; color: var(--ink); }
+.brow.btn { cursor: pointer; border: 0; background: none; padding: 1px 0; text-align: left; color: var(--ink); font-family: var(--ui); font-size: 14px; width: 100%; }
+.brow.off { opacity: 0.35; }
+.brow .lb { display: flex; align-items: center; gap: 7px; min-width: 0; }
+.brow .lb span { overflow: hidden; text-overflow: ellipsis; white-space: nowrap; }
+.brow .tr { display: flex; align-items: center; gap: 6px; }
+.brow .b { height: 12px; border-radius: 0 3px 3px 0; background: var(--bar); }
+.brow .v { font-weight: 600; font-variant-numeric: tabular-nums; font-size: 14px; }
+.dot { width: 11px; height: 11px; border-radius: 50%; flex: none; display: inline-block; }
+.ring { width: 11px; height: 11px; border-radius: 50%; flex: none; display: inline-block; border: 1.6px dashed var(--ink-2); }
+.card { background: var(--paper); border: 1px solid var(--rule); border-radius: 6px; padding: 14px 16px; display: grid; gap: 8px; }
+.detail h3 { font-family: var(--display); font-size: 24px; }
+.detail .gname { font-family: var(--body); font-size: 19px; color: var(--ink-2); }
+.dl { display: grid; grid-template-columns: 112px minmax(0, 1fr); gap: 4px 10px; font-size: 14.5px; }
+.dl dt { font-family: var(--ui); font-size: 12px; letter-spacing: 0.06em; text-transform: uppercase; color: var(--muted); padding-top: 3px; }
+.dl dd { margin: 0; overflow-wrap: anywhere; }
+.pill { display: inline-flex; align-items: center; gap: 6px; font-family: var(--ui); font-size: 13px; background: var(--chip); border-radius: 999px; padding: 2px 9px; color: var(--ink); }
+.linkbtn { font-family: var(--ui); font-size: 13.5px; background: none; border: 0; color: var(--ink-2); text-decoration: underline; text-underline-offset: 3px; cursor: pointer; padding: 0; justify-self: start; }
+
+/* pace + today */
+.two { display: grid; grid-template-columns: minmax(0, 1.6fr) minmax(0, 1fr); gap: 24px; align-items: start; }
+.chart { border: 1px solid var(--rule); border-radius: 6px; background: var(--paper); }
+.chart svg { display: block; width: 100%; height: auto; }
+.chart text { font-family: var(--ui); }
+.stack { display: grid; gap: 16px; min-width: 0; }
+.big { font-family: var(--ui); font-size: 15px; color: var(--ink-2); line-height: 1.35; }
+.big b { font-size: 34px; color: var(--ink); font-weight: 600; font-variant-numeric: tabular-nums; margin-right: 6px; }
+.small { font-family: var(--ui); font-size: 14.5px; color: var(--ink-2); line-height: 1.45; }
+.small b { color: var(--ink); font-weight: 600; }
+.caps { columns: 2 220px; column-gap: 22px; font-family: var(--ui); font-size: 14.5px; line-height: 1.6; }
+.caps div { break-inside: avoid; }
+.caps i { font-family: var(--body); font-size: 15.5px; color: var(--ink-2); }
+
+/* table */
+.filters { display: flex; flex-wrap: wrap; gap: 8px 12px; align-items: center; font-family: var(--ui); font-size: 14px; }
+.filters input[type=search], .filters select { font-family: var(--ui); font-size: 14.5px; padding: 6px 9px; border: 1px solid var(--rule); border-radius: 5px; background: var(--paper); color: var(--ink); }
+.filters input[type=search] { min-width: 0; width: min(320px, 100%); }
+.filters select { max-width: 100%; min-width: 0; }
+section > * { min-width: 0; }
+.filters label.ck { display: inline-flex; align-items: center; gap: 5px; color: var(--ink-2); }
+.count { font-family: var(--ui); font-size: 14px; color: var(--muted); }
+.tablewrap { overflow-x: auto; border: 1px solid var(--rule); border-radius: 6px; background: var(--paper); }
+table { border-collapse: collapse; width: 100%; min-width: 860px; }
+th, td { text-align: left; padding: 6px 10px; border-bottom: 1px solid var(--rule); vertical-align: top; }
+th { font-family: var(--ui); font-size: 12px; letter-spacing: 0.08em; text-transform: uppercase; color: var(--ink-2); background: var(--paper); position: sticky; top: 0; white-space: nowrap; }
+th button { all: unset; cursor: pointer; }
+th button:focus-visible { outline: 2px solid var(--focus); }
+td { font-size: 15px; }
+td.dt { font-family: var(--ui); font-size: 13.5px; white-space: nowrap; font-variant-numeric: tabular-nums; color: var(--ink-2); text-align: right; }
+td.nm b { font-weight: 700; }
+td.gr { color: var(--ink-2); }
+td.tk { font-family: var(--ui); font-size: 14px; }
+td.tk.v { color: var(--muted); }
+td.pg { font-style: italic; color: var(--ink-2); font-size: 14.5px; }
+td.og, td.rg { font-family: var(--ui); font-size: 13.5px; color: var(--ink-2); white-space: nowrap; }
+td.og { white-space: normal; min-width: 170px; max-width: 260px; }
+tr.row { cursor: pointer; }
+tr.row:hover td { background: var(--hi); }
+tr.grp td { font-family: var(--ui); font-size: 12px; font-weight: 600; letter-spacing: 0.09em; text-transform: uppercase; color: var(--ink-2); background: var(--chip); }
+tr.more td { background: var(--bg); }
+.more .dl { max-width: 900px; }
+
+/* gallery */
+.gallery { display: grid; grid-template-columns: repeat(auto-fill, minmax(230px, 1fr)); gap: 12px; }
+.thumb { border: 1px solid var(--rule); border-radius: 5px; overflow: hidden; background: var(--paper); cursor: pointer; padding: 0; display: grid; text-align: left; color: var(--ink); }
+.thumb img { width: 100%; aspect-ratio: 16 / 9; display: block; object-fit: cover; }
+.thumb span { font-family: var(--ui); font-size: 13.5px; padding: 6px 9px; color: var(--ink-2); }
+.lb-wrap { position: fixed; inset: 0; z-index: 50; background: rgba(10, 12, 16, 0.86); display: grid; grid-template-rows: auto 1fr auto; padding: calc(env(safe-area-inset-top, 0px) + 10px) 12px calc(env(safe-area-inset-bottom, 0px) + 10px); gap: 8px; }
+.lb-wrap .bar { display: flex; gap: 8px; justify-content: space-between; align-items: center; color: #e8eae5; font-family: var(--ui); font-size: 14px; flex-wrap: wrap; }
+.lb-wrap .bar .btns { display: flex; gap: 6px; flex-wrap: wrap; }
+.lb-wrap button { font-family: var(--ui); font-size: 14px; background: #2a313b; color: #e8eae5; border: 1px solid #3c4450; border-radius: 5px; padding: 6px 11px; cursor: pointer; }
+.lb-wrap .imgbox { min-height: 0; display: grid; place-items: center; overflow: auto; }
+.lb-wrap img { max-width: 100%; max-height: 100%; object-fit: contain; background: #eceee9; }
+.btnrow { display: flex; gap: 8px; flex-wrap: wrap; }
+.btn { font-family: var(--ui); font-size: 14.5px; background: var(--ink); color: var(--bg); border: 0; border-radius: 5px; padding: 8px 14px; cursor: pointer; }
+.btn.ghost { background: var(--paper); color: var(--ink); border: 1px solid var(--rule); }
+.acts { display: grid; grid-template-columns: 76px minmax(0, 1fr); column-gap: 12px; row-gap: 9px; font-family: var(--ui); font-size: 15px; line-height: 1.42; color: var(--ink-2); }
+.acts .y { font-weight: 600; color: var(--ink); text-align: right; font-variant-numeric: tabular-nums; }
+.acts b { color: var(--ink); font-weight: 600; } .acts .hl { font-style: italic; }
+.chq { border-left: 3px solid var(--nat); padding: 2px 0 2px 14px; }
+.chq .q { font-family: var(--display); font-size: 24px; color: var(--ink); line-height: 1.2; }
+.chq .by { font-family: var(--ui); font-size: 14px; color: var(--ink-2); margin-top: 4px; }
+#romestrip { width: 100%; height: auto; display: block; font-family: var(--ui); }
+.method { display: grid; grid-template-columns: repeat(2, minmax(0, 1fr)); gap: 18px 28px; }
+.method div { display: grid; gap: 6px; min-width: 0; align-content: start; }
+.method p { font-size: 16px; color: var(--ink-2); }
+footer { margin-top: 40px; padding-top: 16px; border-top: 1px solid var(--rule); font-family: var(--ui); font-size: 13.5px; color: var(--muted); line-height: 1.5; }
+
+
+.yearbar { display: grid; grid-template-columns: auto minmax(0, 1fr) auto; gap: 10px; align-items: center; font-family: var(--ui); font-size: 14px; color: var(--ink-2); }
+.yearbar input[type=range] { width: 100%; accent-color: var(--ink); }
+.yearbar output { font-weight: 600; color: var(--ink); font-variant-numeric: tabular-nums; min-width: 6.5em; text-align: right; }
+.stopring { width: 11px; height: 11px; border-radius: 50%; flex: none; display: inline-block; border: 1.8px solid var(--ink); }
+.phases { font-family: var(--ui); font-size: 13.5px; color: var(--ink-2); }
+
+.qlist { display: grid; grid-template-columns: repeat(2, minmax(0, 1fr)); gap: 14px 28px; }
+.q { display: grid; gap: 5px; align-content: start; min-width: 0; padding-top: 10px; border-top: 1px solid var(--rule); }
+.q h3 { font-size: 20px; }
+.q p { font-size: 15.5px; color: var(--ink-2); line-height: 1.5; }
+.q p b { font-family: var(--ui); font-size: 12.5px; letter-spacing: 0.08em; text-transform: uppercase; color: var(--muted); font-weight: 600; margin-right: 6px; }
+@media (max-width: 920px) { .qlist { grid-template-columns: minmax(0, 1fr); } }
+
+@media (max-width: 920px) {
+  .explorer, .two { grid-template-columns: minmax(0, 1fr); }
+  .facts { grid-template-columns: repeat(2, minmax(0, 1fr)); }
+  .fact:nth-child(3) { padding-left: 0; border-left: 0; }
+  .fact:nth-child(n+3) { border-top: 1px solid var(--rule); }
+  .method { grid-template-columns: minmax(0, 1fr); }
+}
+@media (max-width: 480px) { .fact b { font-size: 28px; } .dl { grid-template-columns: 92px minmax(0, 1fr); } }
+@media (prefers-reduced-motion: reduce) { * { transition: none !important; animation: none !important; } }
+
+:root { --gre: #2a78d6; --eas: #eb6834; --ita: #1baf7a; --afr: #eda100; --wes: #e87ba4; --bal: #008300; --stp: #6250d6; --ara: #e34948; --civ: #9aa0a6; }
+@media (prefers-color-scheme: dark) { :root:not([data-theme="light"]) { --gre: #3987e5; --eas: #d95926; --ita: #199e70; --afr: #c98500; --wes: #d55181; --bal: #008300; --stp: #9085e9; --ara: #e66767; --civ: #7d848c; } }
+:root[data-theme="dark"] { --gre: #3987e5; --eas: #d95926; --ita: #199e70; --afr: #c98500; --wes: #d55181; --bal: #008300; --stp: #9085e9; --ara: #e66767; --civ: #7d848c; }
+/* battle sites: additions to the series stylesheet */
+:root { --win: #2a78d6; --loss: #eb6834; --draw: #b9bec3; }
+@media (prefers-color-scheme: dark) { :root:not([data-theme="light"]) { --win: #4b93e6; --loss: #f2804f; --draw: #687079; } }
+:root[data-theme="dark"] { --win: #4b93e6; --loss: #f2804f; --draw: #687079; }
+.m-land { fill: var(--land); }
+.m-n { font-weight: 400; fill: var(--ink-2); }
+.dia { width: 8px; height: 8px; transform: rotate(45deg); display: inline-block; flex: none; margin: 0 2px; }
+.dot.sm { width: 6px; height: 6px; }
+.dot.hollow, .dia.hollow { background: none; border: 1.6px dashed var(--ink-2); }
+.hint.lg, .lg { display: flex; flex-wrap: wrap; gap: 6px 14px; }
+.lg span { display: inline-flex; align-items: center; gap: 6px; }
+.lg .dot, .lg .dia { background: var(--ink-2); }
+.lg .dot.sm { background: var(--old); }
+.lg .ring { width: 10px; height: 10px; }
+.tip .tl1 { display: flex; gap: 6px; align-items: center; font-size: 13px; margin-top: 2px; }
+.tip .tl1 .dot { width: 8px; height: 8px; }
+.tip .tl1.more { color: var(--muted); font-style: italic; }
+.wbar { display: inline-flex; width: 100%; min-width: 70px; height: 10px; border-radius: 2px; overflow: hidden; background: var(--chip); vertical-align: middle; }
+.wbar i { display: block; height: 100%; }
+.rrow { display: grid; grid-template-columns: minmax(0, 1fr) auto; gap: 10px; align-items: center; }
+.rnum { font-family: var(--ui); font-size: 14px; color: var(--ink-2); white-space: nowrap; }
+.rnum b { color: var(--ink); font-weight: 600; }
+.rgrid { display: grid; grid-template-columns: minmax(0, 1fr) 90px auto; gap: 4px 8px; align-items: center; font-family: var(--ui); font-size: 14px; }
+.rgrid .rn { overflow: hidden; text-overflow: ellipsis; white-space: nowrap; }
+.rgrid .rv { font-variant-numeric: tabular-nums; color: var(--ink-2); font-size: 13px; text-align: right; }
+.selcard .shead { display: flex; flex-wrap: wrap; gap: 2px 10px; align-items: baseline; }
+.selcard h3 { font-size: 22px; }
+.blist { display: grid; gap: 1px; max-height: 640px; overflow: auto; }
+.bitem { all: unset; box-sizing: border-box; cursor: pointer; display: grid; grid-template-columns: 14px minmax(0, 1fr); gap: 8px; align-items: start; padding: 5px 6px; border-radius: 5px; font-family: var(--ui); font-size: 14px; color: var(--ink-2); line-height: 1.35; }
+.bitem b { color: var(--ink); font-weight: 600; }
+.bitem:hover, .bitem.on { background: var(--hi); }
+.bitem:focus-visible { outline: 2px solid var(--focus); }
+.bitem .dot, .bitem .dia { margin-top: 4px; width: 9px; height: 9px; }
+.detail.inl { padding: 2px 4px 12px 28px; display: grid; gap: 8px; }
+.detail.inl .dl { grid-template-columns: 92px minmax(0, 1fr); font-size: 14px; }
+.pills { display: flex; flex-wrap: wrap; gap: 6px; }
+.pill .dia { width: 8px; height: 8px; }
+.pill.gW { box-shadow: inset 4px 0 0 var(--win); }
+.pill.gL { box-shadow: inset 4px 0 0 var(--loss); }
+.pill.gD { box-shadow: inset 4px 0 0 var(--draw); }
+.btnline { display: flex; gap: 16px; flex-wrap: wrap; }
+table.bt td.nm { min-width: 190px; }
+table.bt td.nm .dot, table.bt td.nm .dia { width: 9px; height: 9px; margin-right: 7px; }
+table.bt td.nm .gk { display: block; font-size: 14px; color: var(--ink-2); margin-left: 18px; }
+table.bt td.rs { font-family: var(--ui); font-size: 14px; color: var(--ink); min-width: 200px; }
+table.bt td.rs.gW { box-shadow: inset 3px 0 0 var(--win); }
+table.bt td.rs.gL { box-shadow: inset 3px 0 0 var(--loss); }
+table.bt td.rs.gD { box-shadow: inset 3px 0 0 var(--draw); }
+table.bt td.wh, table.bt td.wr { font-family: var(--ui); font-size: 13.5px; color: var(--ink-2); }
+table.bt td.wr { min-width: 150px; max-width: 250px; }
+table.bt td.wh { white-space: nowrap; }
+table.rt { min-width: 680px; }
+table.rt td { font-family: var(--ui); font-size: 14.5px; }
+table.rt td.num { text-align: right; font-variant-numeric: tabular-nums; }
+table.rt td.bc { width: 180px; vertical-align: middle; }
+table.rt td.s { color: var(--ink-2); white-space: nowrap; font-size: 13.5px; }
+table.rt td.nm b { font-weight: 600; }
+table.rt td.nm .sub { color: var(--muted); font-size: 13px; }
+table.rt tr.tot td { background: var(--chip); }
+table.rt th button { all: unset; cursor: pointer; }
+.h3s { font-size: 22px; margin-top: 10px; }
+#rec2 { display: grid; gap: 10px; }
+a.btn { text-decoration: none; display: inline-block; }
+.lbsave { font-family: var(--ui); font-size: 14px; background: #2a313b; color: #e8eae5; border: 1px solid #3c4450; border-radius: 5px; padding: 6px 11px; text-decoration: none; }
+.zrow { display: flex; gap: 6px; flex-wrap: wrap; align-items: center; font-family: var(--ui); font-size: 13.5px; color: var(--muted); }
+.zrow .tab { font-size: 13px; padding: 3px 10px; }
+details.more2 { border: 1px solid var(--rule); border-radius: 6px; background: var(--paper); padding: 10px 14px; }
+details.more2 summary { cursor: pointer; font-family: var(--ui); font-size: 14.5px; color: var(--ink); font-weight: 600; }
+details.more2[open] summary { margin-bottom: 10px; }
+.mini-t { width: 100%; border-collapse: collapse; min-width: 0; }
+.mini-t th, .mini-t td { font-size: 14px; padding: 5px 8px; border-bottom: 1px solid var(--rule); vertical-align: top; text-align: left; }
+.mini-t th { position: static; font-size: 11.5px; }
+.mini-t td.n { white-space: nowrap; font-family: var(--ui); }
+.mini-t td.s { font-family: var(--ui); font-size: 13.2px; color: var(--ink-2); }
+.scroll { max-height: 520px; overflow: auto; }
+.lo { display: grid; gap: 10px; }
+.lo p { font-size: 15.5px; color: var(--ink-2); line-height: 1.5; max-width: 80ch; }
+.lo p b { color: var(--ink); }
+.q p span { display: inline; }
+#mapbox { scroll-margin-top: 58px; }
+@media (max-width: 480px) { .detail.inl { padding-left: 8px; } table.bt td.nm { min-width: 160px; } }
+@media (max-width: 600px) {
+  .tabs, .zrow { flex-wrap: nowrap; overflow-x: auto; scrollbar-width: none; padding-bottom: 2px; -webkit-overflow-scrolling: touch; }
+  .tabs::-webkit-scrollbar, .zrow::-webkit-scrollbar { display: none; }
+  .tabs .tab, .zrow .tab, .zrow span { flex: none; white-space: nowrap; }
+}
+
+/* ---------- The Greeks Who Taught Greek: additions to the series stylesheet */
+:root { --lT: #2a78d6; --lL: #876114; --lJ: #eb6834; --lJw: #8b939c; --lC: #1baf7a; --lC2: #8fd9bd; --lE: #4a3aa7; --lE2: #a99ef0; --lU: #b9bec3; --grat: rgba(95,125,136,0.18); --route: #1b2230; }
+@media (prefers-color-scheme: dark) { :root:not([data-theme="light"]) { --lT: #4b93e6; --lL: #c0902f; --lJ: #f2804f; --lJw: #7d848c; --lC: #2fc48e; --lC2: #1d6e52; --lE: #8d7ff0; --lE2: #4b4290; --lU: #687079; --grat: rgba(127,162,174,0.14); --route: #e8eae5; } }
+:root[data-theme="dark"] { --lT: #4b93e6; --lL: #c0902f; --lJ: #f2804f; --lJw: #7d848c; --lC: #2fc48e; --lC2: #1d6e52; --lE: #8d7ff0; --lE2: #4b4290; --lU: #687079; --grat: rgba(127,162,174,0.14); --route: #e8eae5; }
+.stamp { font-family: var(--ui); font-size: 13.5px; font-weight: 600; letter-spacing: 0.06em; text-transform: uppercase; color: var(--ink); display: inline-flex; align-self: start; justify-self: start; border: 1px solid var(--ink-2); border-radius: 999px; padding: 3px 11px; }
+.credit { font-family: var(--ui); font-size: 14.5px; color: var(--ink-2); max-width: 80ch; }
+.eyebrow i { font-family: var(--body); text-transform: none; letter-spacing: 0.02em; font-size: 19px; color: var(--ink-2); }
+.facts { grid-template-columns: repeat(5, minmax(0, 1fr)); }
+.essay { max-width: 820px; color: var(--ink); }
+.essay p { margin: 0 0 14px; }
+.m-grat { fill: none; stroke: var(--grat); stroke-width: 0.7; vector-effect: non-scaling-stroke; pointer-events: none; }
+.m-land { fill: var(--land); }
+.m-j { fill: none; stroke-linecap: round; pointer-events: none; }
+.m-mk { pointer-events: none; }
+.m-route { fill: none; stroke: var(--route); stroke-linejoin: round; stroke-linecap: round; pointer-events: none; }
+.m-rnum { font-family: var(--ui); fill: var(--paper); font-weight: 600; pointer-events: none; }
+.layerbtn .dot, .layerbtn .dia, .layerbtn .ln { margin-right: 2px; }
+.ln { display: inline-block; width: 16px; height: 3px; border-radius: 2px; flex: none; vertical-align: middle; }
+.tab[aria-pressed="true"] .dot, .tab[aria-pressed="true"] .dia, .tab[aria-pressed="true"] .ln { box-shadow: 0 0 0 1.5px var(--bg); }
+.dia { background: var(--lE); }
+.ringL { width: 12px; height: 12px; border-radius: 50%; display: inline-block; flex: none; border: 1.6px solid var(--lL); background: color-mix(in srgb, var(--lL) 30%, transparent); }
+.ringP { width: 12px; height: 12px; border-radius: 50%; display: inline-block; flex: none; border: 1.4px dashed var(--lL); }
+.yearctl { display: flex; flex-wrap: wrap; gap: 6px; align-items: center; }
+.yearbar { grid-template-columns: auto minmax(0, 1fr) auto; }
+.ltot { display: grid; gap: 3px; }
+.lrow { all: unset; box-sizing: border-box; display: grid; grid-template-columns: 18px minmax(0, 1fr) auto; gap: 8px; align-items: center; font-family: var(--ui); font-size: 14px; color: var(--ink); cursor: pointer; padding: 2px 4px; border-radius: 4px; }
+.lrow:hover { background: var(--hi); }
+.lrow:focus-visible { outline: 2px solid var(--focus); }
+.lrow.off { opacity: 0.4; }
+.lrow .v { font-weight: 600; font-variant-numeric: tabular-nums; }
+.lrow .sub { color: var(--muted); font-size: 12.5px; }
+.lg2 { display: grid; gap: 4px; font-family: var(--ui); font-size: 13px; color: var(--ink-2); }
+.lg2 span { display: inline-flex; gap: 7px; align-items: center; }
+.sel h3 { font-size: 22px; }
+.sel .lbl { font-family: var(--ui); font-size: 12px; letter-spacing: 0.08em; text-transform: uppercase; color: var(--muted); margin-top: 6px; display: flex; align-items: center; gap: 6px; }
+.sel .blist { max-height: 300px; }
+.bitem .yr { font-variant-numeric: tabular-nums; color: var(--ink-2); }
+.more-n { font-family: var(--ui); font-size: 13px; color: var(--muted); padding: 2px 6px; }
+.charts { display: grid; grid-template-columns: repeat(2, minmax(0, 1fr)); gap: 16px; }
+.charts .chart { padding: 8px 10px 6px; display: grid; gap: 2px; }
+.charts .chart h3 { font-family: var(--ui); font-size: 15px; font-weight: 600; }
+.charts .chart .cap { font-family: var(--ui); font-size: 13px; color: var(--ink-2); }
+.charts .lg { font-family: var(--ui); font-size: 13px; color: var(--ink-2); }
+.charts .lg .dot { width: 10px; height: 10px; border-radius: 2px; }
+.cbar { cursor: default; }
+.cbar:hover { opacity: 0.8; }
+table.ppl td.nm { min-width: 220px; }
+table.ppl td.nm .gk { display: block; font-size: 14px; color: var(--ink-2); }
+table.ppl td.wh { font-family: var(--ui); font-size: 13.5px; color: var(--ink-2); }
+table.ppl td.ro { font-family: var(--ui); font-size: 13.5px; color: var(--ink); min-width: 140px; }
+.tier { font-family: var(--ui); font-size: 11.5px; color: var(--ink-2); border: 1px solid var(--rule); border-radius: 999px; padding: 0 6px; margin-left: 6px; white-space: nowrap; vertical-align: 1px; }
+.stl { width: 100%; border-collapse: collapse; min-width: 0; font-family: var(--ui); font-size: 13.5px; }
+.stl td { padding: 3px 6px 3px 0; border-bottom: 1px solid var(--rule); vertical-align: top; }
+.stl td.y { white-space: nowrap; color: var(--ink-2); font-variant-numeric: tabular-nums; width: 1%; }
+.stl td.p { font-weight: 600; color: var(--ink); min-width: 110px; }
+.stl td.r { color: var(--ink-2); }
+table.ms { min-width: 1160px; table-layout: auto; }
+table.ms th, table.ms td { padding: 6px 7px; }
+table.ms td { font-family: var(--ui); font-size: 13px; line-height: 1.35; }
+table.ms td.sh { font-weight: 600; min-width: 110px; max-width: 170px; overflow-wrap: anywhere; }
+table.ms td.sh.none { font-weight: 400; color: var(--muted); font-style: italic; }
+table.ms td.co { min-width: 110px; max-width: 160px; color: var(--ink-2); }
+table.ms td.dt2 { min-width: 64px; max-width: 100px; white-space: normal; color: var(--ink-2); }
+table.ms td.ct { min-width: 150px; max-width: 240px; font-family: var(--body); font-size: 14px; }
+table.ms td.sc, table.ms td.pl, table.ms td.ow { min-width: 76px; max-width: 140px; color: var(--ink-2); overflow-wrap: anywhere; }
+table.ms td.why { min-width: 150px; max-width: 240px; color: var(--ink-2); font-size: 12.5px; }
+table.ms td.src { min-width: 80px; max-width: 130px; color: var(--ink-2); }
+table.ms td.gp { white-space: nowrap; }
+.gp i { display: inline-grid; place-items: center; width: 20px; height: 20px; border-radius: 50%; font-style: normal; font-weight: 600; font-size: 12px; color: #fff; }
+.gp i.ga { background: var(--lJ); } .gp i.gb { background: var(--lC); } .gp i.gc { background: #6a7f22; } .gp i.gd { background: var(--lE); } .gp i.gq { background: var(--lU); color: var(--ink); }
+tr.prob td { background: color-mix(in srgb, var(--chip) 55%, transparent); }
+tr.prob td.sh::after { content: " probable"; font-family: var(--ui); font-size: 11px; font-weight: 500; letter-spacing: 0.04em; color: var(--ink-2); border: 1px dashed var(--ink-2); border-radius: 999px; padding: 0 5px; margin-left: 6px; white-space: nowrap; }
+tr.pinned td { box-shadow: inset 0 2px 0 var(--focus), inset 0 -2px 0 var(--focus); }
+.pager { display: flex; flex-wrap: wrap; gap: 6px; align-items: center; font-family: var(--ui); font-size: 14px; color: var(--ink-2); }
+.pager button { font-family: var(--ui); font-size: 14px; border: 1px solid var(--rule); background: var(--paper); color: var(--ink); border-radius: 5px; padding: 4px 10px; cursor: pointer; min-width: 34px; }
+.pager button[disabled] { opacity: 0.4; cursor: default; }
+.pinbar { display: flex; gap: 10px; align-items: center; font-family: var(--ui); font-size: 14px; color: var(--ink); background: var(--hi); border-radius: 6px; padding: 6px 10px; }
+.pinbar[hidden] { display: none; }
+table.ct2 { min-width: 760px; }
+table.ct2 td { font-family: var(--ui); font-size: 14px; }
+table.ct2 td.num { text-align: right; font-variant-numeric: tabular-nums; white-space: nowrap; }
+table.ct2 td.nm { min-width: 230px; }
+table.ct2 td.nm b { font-weight: 600; }
+table.ct2 td.nm .sub { display: block; color: var(--muted); font-size: 12.5px; }
+table.ct2 td.s { color: var(--ink-2); font-size: 13px; min-width: 200px; }
+table.ct2 td.ci { color: var(--ink-2); font-size: 13px; white-space: nowrap; }
+table.ct2 td.bc { width: 170px; vertical-align: middle; }
+table.ct2 tr.tot td { background: var(--chip); font-weight: 600; }
+.cbarw { display: inline-flex; height: 11px; border-radius: 2px; overflow: hidden; vertical-align: middle; }
+.cbarw i { display: block; height: 100%; }
+table.col td.nm { min-width: 220px; }
+table.col td { font-family: var(--ui); font-size: 14px; }
+table.col td.num { text-align: right; font-variant-numeric: tabular-nums; }
+table.acq { width: 100%; border-collapse: collapse; min-width: 0; }
+table.acq td, table.acq th { font-family: var(--ui); font-size: 13px; padding: 4px 6px; border-bottom: 1px solid var(--rule); vertical-align: top; text-align: left; position: static; }
+table.acq th { font-size: 11px; background: none; }
+table.ed td.nm { min-width: 220px; }
+table.ed td { font-family: var(--ui); font-size: 14px; }
+table.ed td.au b { font-weight: 600; }
+table.ed td.au .w { display: block; font-family: var(--body); font-size: 15px; font-style: italic; color: var(--ink); }
+table.ed td.pc { min-width: 180px; max-width: 280px; font-size: 13px; color: var(--ink-2); }
+.gkyes { font-family: var(--ui); font-size: 11.5px; color: var(--ink); background: color-mix(in srgb, var(--lE) 22%, transparent); border-radius: 999px; padding: 0 6px; margin-left: 4px; white-space: nowrap; }
+.mslink { font-family: var(--ui); font-size: 13px; background: none; border: 0; padding: 0; color: var(--focus); text-decoration: underline; text-underline-offset: 2px; cursor: pointer; text-align: left; }
+.mdl ul { margin: 4px 0 0; padding-left: 18px; font-size: 15.5px; color: var(--ink-2); line-height: 1.5; }
+.mdl li { margin: 0 0 6px; }
+.method ul.gl { margin: 4px 0; padding-left: 18px; font-size: 15.5px; color: var(--ink-2); }
+.method p + p { margin-top: 8px; }
+.method a { color: var(--ink); }
+.mini-t td.n { white-space: normal; min-width: 90px; }
+.vers { display: grid; gap: 10px; }
+.ver { display: grid; grid-template-columns: 150px minmax(0, 1fr); gap: 12px; border-top: 1px solid var(--rule); padding-top: 10px; }
+.ver .vh { display: grid; align-content: start; font-family: var(--ui); }
+.ver .vh b { font-size: 24px; font-weight: 600; }
+.ver .vh span { font-size: 13.5px; color: var(--ink-2); }
+.ver .vt { font-family: var(--display); font-size: 19px; margin-bottom: 4px; }
+.ver ul { margin: 0; padding-left: 18px; font-size: 15px; color: var(--ink-2); }
+.ver li { margin-bottom: 4px; }
+.dlgrid { display: grid; grid-template-columns: repeat(auto-fill, minmax(260px, 1fr)); gap: 12px; }
+.dlgrid .card p { font-size: 14.5px; color: var(--ink-2); font-family: var(--ui); }
+footer .stamp { font-size: 12px; padding: 2px 9px; margin: 0 0 8px; color: var(--muted); border-color: var(--rule); }
+footer p { margin: 0 0 6px; }
+.prolog ul { margin: 6px 0 0; padding-left: 18px; font-size: 15px; color: var(--ink-2); }
+.prolog li { margin-bottom: 4px; }
+.filters .ck input { accent-color: var(--ink); }
+@media (max-width: 1100px) { .facts { grid-template-columns: repeat(3, minmax(0, 1fr)); } .fact:nth-child(4) { padding-left: 0; border-left: 0; } .fact:nth-child(n+4) { border-top: 1px solid var(--rule); } }
+@media (max-width: 920px) {
+  .charts { grid-template-columns: minmax(0, 1fr); }
+  .facts { grid-template-columns: repeat(2, minmax(0, 1fr)); }
+  .fact:nth-child(n) { padding-left: 16px; border-left: 1px solid var(--rule); border-top: 0; }
+  .fact:nth-child(odd) { padding-left: 0; border-left: 0; }
+  .fact:nth-child(n+3) { border-top: 1px solid var(--rule); }
+  .ver { grid-template-columns: minmax(0, 1fr); gap: 4px; }
+}
+@media (max-width: 480px) { .stamp { font-size: 12px; } .lede { font-size: 18px; } nav.sec .in { font-size: 14px; gap: 2px 14px; } }
+
+.fact { align-content: start; }
+#mrow { max-width: min(360px, 100%); }
+table.col td.wh { max-width: 260px; font-family: var(--ui); font-size: 13.5px; color: var(--ink-2); }
+table.col td.gm { min-width: 160px; max-width: 280px; font-family: var(--ui); font-size: 13.5px; color: var(--ink-2); }
+table.ed { min-width: 920px; }
+table.ed td.wh { max-width: 210px; font-family: var(--ui); font-size: 13.5px; color: var(--ink-2); }
+table.ed td.au { min-width: 200px; max-width: 320px; }
+@media (max-width: 760px) {
+  nav.sec .in { flex-wrap: nowrap; overflow-x: auto; scrollbar-width: none; -webkit-overflow-scrolling: touch; }
+  nav.sec .in::-webkit-scrollbar { display: none; }
+  nav.sec a { flex: none; white-space: nowrap; }
+}
+table.ed td.wh, table.col td.wh, table.ppl td.wh { white-space: normal; }
+table.ed td.wh { min-width: 110px; }
+@media (max-width: 600px) { table.ct2 td.nm { min-width: 180px; } table.ct2 td.bc { width: 90px; } }
+@media (max-width: 600px) {
+  table.ppl, table.ed, table.col { min-width: 0; }
+  table.ppl th:nth-child(3), table.ppl tr.row td:nth-child(3), table.ppl th:nth-child(4), table.ppl tr.row td:nth-child(4) { display: none; }
+  table.ed th:nth-child(3), table.ed tr.row td:nth-child(3), table.ed th:nth-child(4), table.ed tr.row td:nth-child(4), table.ed th:nth-child(6), table.ed tr.row td:nth-child(6) { display: none; }
+  table.col th:nth-child(2), table.col tr.row td:nth-child(2), table.col th:nth-child(3), table.col tr.row td:nth-child(3) { display: none; }
+  table.ppl td.nm, table.ed td.au, table.col td.nm { min-width: 0; }
+  .detail .dl { grid-template-columns: 92px minmax(0, 1fr); }
+  .stl td.p { min-width: 80px; }
+}
+
+</style>
+</head>
+<body>
+<div class="wrap">
+<header class="top">
+  <div class="eyebrow"><i lang="la">Graecum est, non legitur</i><span>Greek teachers, Greek books and the first editions in Latin Europe</span></div>
+  <h1>The Greeks Who Taught Greek to the West, 1340s–1600</h1>
+  <div class="stamp" id="stamp">Version 0.9 · 3 November 2026 · work in progress</div>
+  <p class="credit">A work in progress by Iosif Lazaridis (@iosif_lazaridis on X), supervising research by Anthropic&#x27;s Claude, from public sources.</p>
+  <p class="lede">How the West went from <i lang="la">graecum est, non legitur</i>, "it is Greek; it cannot be read," to reading, teaching and printing Greek: the Greeks who taught it, the books they brought, copied and sold, the books bought, given or taken from the Greek world, the libraries that held them by 1600, and the first printed editions.</p>
+  <div class="facts" id="facts"></div>
+</header>
+</div>
+<nav class="sec" aria-label="Sections"><div class="in">
+  <a href="#map">Map</a><a href="#time">Through time</a><a href="#people">Who they were</a><a href="#manuscripts">Manuscripts</a><a href="#collections">By collection</a><a href="#editions">First editions</a><a href="#method">How we count</a><a href="#versions">Versions</a><a href="#downloads">Downloads</a>
+</div></nav>
+<div class="wrap">
+
+<section id="about" aria-labelledby="about-h">
+  <h2 id="about-h" hidden>Overview</h2>
+  <div class="essay">
+<p>Medieval readers of Latin who met a Greek word in their texts could only write <i lang="la">graecum est, non legitur</i> and pass on. In the 1340s hardly anyone in Latin Europe could read Greek: Petrarch owned a Homer he could not read. By 1600 Greek was taught in the schools and universities of the West, 419 Greek texts had been printed for the first time, and its libraries held thousands of Greek manuscripts.</p>
+<p>This page follows how that happened, from Barlaam of Calabria, who taught Petrarch Greek at Avignon in 1341–42, and Leontius Pilatus, who translated Homer into Latin for Petrarch and Boccaccio at Florence in 1360–62, to 1600: the Greeks who taught, copied, translated and edited Greek in the West; the books they brought, copied and sold, and the books that Westerners bought, were given or took in war from the Greek world; the libraries where those books were by 1600; and the first printed editions, with the manuscripts they were printed from.</p>
+<p>It is a work in progress, released in numbered versions. A manuscript counts only if a source documents it in Latin Europe by 1600: <b>8,232</b> do, 6,722 of them with today's shelfmark, and 2,359 more are probable. Each book counts once. What we looked for and did not find is listed under <a href="#gaps">How we count</a>, with the sources that would settle it; corrections and sources from readers are welcome.</p>
+  </div>
+</section>
+
+<section id="map" aria-labelledby="map-h">
+  <h2 id="map-h">The map</h2>
+  <p class="intro">Choose the layers, then drag the year slider to see any twenty years, or press Play to run from 1340 to 1600; "All years" shows everything, including what is not dated. <b>Teachers:</b> the places where the people lived and worked, by the number of people there. <b>Libraries:</b> where the manuscripts were documented by 1600, by the number counted, with the probable ones in the dashed ring; they do not change with the slider. <b>Journeys:</b> people coming to the West, collectors' acquisitions and manuscripts brought to their collection from the Greek world; tick the box beside the map to add the moves within the West, in gray. <b>Copies made in the West:</b> dated copies by the place of copying. <b>First editions:</b> by the place of printing. Select a place for everything there.</p>
+  <div class="explorer">
+    <div class="mapcol">
+      <div class="tabs" id="layers" role="group" aria-label="Layers"></div>
+      <div class="yearctl" role="group" aria-label="Years">
+        <button type="button" class="tab" id="allyears" aria-pressed="true">All years</button>
+        <button type="button" class="tab play" id="play" aria-pressed="false">▶ Play</button>
+      </div>
+      <div class="yearbar"><label for="yr">Years</label><input type="range" id="yr" aria-label="Last year of the twenty-year window"><output id="yrout" for="yr"></output></div>
+      <div class="mapbox" id="mapbox">
+        <svg id="mapsvg" role="img" aria-label="Map of Europe and the Mediterranean from Portugal to the Levant and the Black Sea, with the Greek teachers, the libraries, the journeys of people and books, the copies made in the West and the first editions"></svg>
+        <div class="zoom">
+          <button type="button" id="zin" aria-label="Zoom in">+</button>
+          <button type="button" id="zout" aria-label="Zoom out">−</button>
+          <button type="button" id="zall" class="txt" aria-label="Show the whole map">All</button>
+        </div>
+        <div class="tip" id="tip" hidden></div>
+      </div>
+      <div class="tl"><svg id="tl" aria-label="Dated events per decade; select a decade"></svg></div>
+    </div>
+    <aside class="side" id="side" aria-live="polite"></aside>
+  </div>
+</section>
+
+<section id="time" aria-labelledby="time-h">
+  <h2 id="time-h">Through time</h2>
+  <p class="intro">Per decade, from the 1340s to the 1590s (1600 is counted with the 1590s). Only dated events are counted: teachers by the year they came to the West, copies by the year in their colophon, books from the Greek world by the year the source gives for their arrival, editions by the year they were printed. The dashed lines mark the Council of Ferrara and Florence (1438–39) and the fall of Constantinople (1453). Point to a bar for its number.</p>
+  <div class="charts" id="charts"></div>
+</section>
+
+<section id="people" aria-labelledby="people-h">
+  <h2 id="people-h">Who they were</h2>
+  <p class="intro">The 126 people of the list: Greek speakers who taught, copied, translated, edited or printed Greek in the West, with the dates and places of their lives as the sources give them. Select a row for their stations, pupils and sources, and to show their journey on the map.</p>
+  <div class="filters">
+    <input type="search" id="pq" placeholder="Search a name, place, pupil or patron" aria-label="Search the people">
+    <select id="prole" aria-label="Role"><option value="">Any role</option></select>
+    <select id="ptier" aria-label="List"><option value="">All lists</option></select>
+    <select id="parr" aria-label="Arrival in the West"><option value="">Any arrival</option><option value="1">Before 1453</option><option value="2">1453–1500</option><option value="3">1501–1600</option><option value="0">Not dated</option></select>
+    <span class="count" id="pcount"></span>
+  </div>
+  <div class="pinbar" id="ppin" hidden></div>
+  <div class="tablewrap"><table class="bt ppl">
+    <thead><tr>
+      <th><button type="button" data-psort="n">Name</button></th>
+      <th><button type="button" data-psort="b">Born–died</button></th>
+      <th><button type="button" data-psort="bp">Birthplace</button></th>
+      <th>Roles</th>
+      <th style="text-align:right"><button type="button" data-psort="ay">Came to the West</button></th>
+    </tr></thead>
+    <tbody id="ptbody"></tbody>
+  </table></div>
+  <p class="hint">The lists: <b>core</b>, the Greek speakers of the set; <b>borderline</b>, those whose part is less direct (a patron, a Westerner of Greek descent, a scholar more than a teacher); <b>secondary</b>, linked entries. Places are given as the sources name them.</p>
+  <details class="more2 prolog"><summary>Before the 1340s: the prologue</summary><p class="small">The twelfth- and thirteenth-century translators and the first chairs of Greek, for context; they are not in the counts.</p><ul><li><b>Council of Vienne (1311-12)</b> Decree (canon &#x27;Inter sollicitudines&#x27;) ordering chairs of Greek, Hebrew, Arabic and &#x27;Chaldean&#x27; at the Roman curia, Paris, Oxford, Bologna and Salamanca.</li><li><b>Burgundio of Pisa (c. 1110-1193)</b> Pisan judge and envoy to Constantinople; Latin versions of Galen, John Chrysostom, John of Damascus and Nemesius.</li><li><b>James of Venice (fl. 1130s-1150s)</b> Venetian cleric in Constantinople (1136); first Latin versions of Aristotle&#x27;s Posterior Analytics, Physics, De anima and part of the Metaphysics.</li><li><b>Henricus Aristippus (d. c. 1162)</b> Archdeacon of Catania in Norman Sicily; translated Plato&#x27;s Meno and Phaedo (c. 1156) and brought a Ptolemy manuscript from Constantinople (1158).</li><li><b>Robert Grosseteste (c. 1170-1253) and his Greek helpers</b> Bishop of Lincoln; translated the Nicomachean Ethics (c. 1246-47) and Pseudo-Dionysius with Greek-speaking helpers including Nicholas the Greek; John of Basingstoke brought Greek books from Athens.</li><li><b>Bartholomew of Messina (fl. 1258-1266)</b> Translator at King Manfred&#x27;s court in Sicily of Aristotelian and pseudo-Aristotelian works.</li><li><b>William of Moerbeke (c. 1215-1286)</b> Flemish Dominican; Latin translations of Aristotle, Archimedes and Proclus; Latin archbishop of Corinth from 1278.</li><li><b>Nicholas-Nektarios of Otranto (d. 1235)</b> Salentine Greek, abbot of San Nicola di Casole; interpreter and translator between Greek and Latin; the Casole library was later searched by Bessarion.</li><li><b>Maximos Planudes (c. 1260-c. 1305)</b> Envoy of Andronikos II to Venice (1296-97); translated Latin works into Greek, the reverse direction.</li></ul></details>
+</section>
+
+<section id="manuscripts" aria-labelledby="ms-h">
+  <h2 id="ms-h">The manuscripts</h2>
+  <p class="intro">All 8,232 Greek manuscripts documented in Latin Europe by 1600 and, with the switch, the 2,359 probable ones. Each is listed under the collection where it is documented by 1600 (see <a href="#collections">By collection</a>), with today's shelfmark where the old inventory entry has been matched to a surviving book. Search any word; select a row for all the details.</p>
+  <div class="filters">
+    <input type="search" id="mq" placeholder="Search a shelfmark, author, scribe, owner or place" aria-label="Search the manuscripts">
+    <select id="mstat" aria-label="Status"><option value="1">Counted (8,232)</option><option value="12">Counted and probable (10,591)</option><option value="2">Probable only (2,359)</option></select>
+    <select id="mrow" aria-label="Collection"><option value="">All collections</option></select>
+    <select id="mgrp" aria-label="Group"><option value="">All groups</option></select>
+    <select id="mcen" aria-label="Century"><option value="">Any century</option></select>
+    <span class="count" id="mcount"></span>
+  </div>
+  <div class="pinbar" id="mpin" hidden></div>
+  <div class="pager" id="mpager1"></div>
+  <div class="tablewrap"><table class="bt ms">
+    <thead><tr>
+      <th><button type="button" data-msort="sh">Shelfmark today</button></th>
+      <th><button type="button" data-msort="row">Collection by 1600</button></th>
+      <th><button type="button" data-msort="dt">Date</button></th>
+      <th><button type="button" data-msort="ct">Contents</button></th>
+      <th><button type="button" data-msort="sc">Scribe</button></th>
+      <th><button type="button" data-msort="cw">Copied where</button></th>
+      <th><button type="button" data-msort="cf">Came from</button></th>
+      <th><button type="button" data-msort="ow">Owner before</button></th>
+      <th><button type="button" data-msort="gp">Group</button></th>
+      <th>Why it counts</th>
+      <th><button type="button" data-msort="src">Source</button></th>
+    </tr></thead>
+    <tbody id="mtbody"></tbody>
+  </table></div>
+  <div class="pager" id="mpager2"></div>
+  <p class="hint" id="mhint"></p>
+</section>
+
+<section id="collections" aria-labelledby="coll-h">
+  <h2 id="coll-h">By collection</h2>
+  <p class="intro">The count by collection: the old inventory or the catalog in which each manuscript is documented by 1600, and its sources. In all, 8,232 counted and 2,359 probable. Select a row to list its manuscripts.</p>
+  <div class="tablewrap"><table class="bt ct2" id="ctab"></table></div>
+  <h3 class="h3s">The collectors and their acquisitions</h3>
+  <p class="intro">52 collectors and libraries, with the 150 acquisitions recorded for them: purchases, gifts and bequests, commissioned copies, books taken in war or confiscated, and books brought by Greeks who came to the West. Select a row for its acquisitions.</p>
+  <div class="tablewrap"><table class="bt col">
+    <thead><tr><th>Collector or library</th><th>Where</th><th>Active</th><th>Greek manuscripts</th><th style="text-align:right">Acquisitions</th></tr></thead>
+    <tbody id="cotbody"></tbody>
+  </table></div>
+</section>
+
+<section id="editions" aria-labelledby="ed-h">
+  <h2 id="ed-h">The first editions</h2>
+  <p class="intro">The first printed edition of each Greek text up to 1600, from the Batrachomyomachia of about 1474 onward: the date, the author and work, the editor and whether he was a Greek speaker, the printer and the place, and the manuscript used as the printer's copy where a study identifies it. A printer's copy that is in the manuscript list links to it.</p>
+  <div class="filters">
+    <input type="search" id="eq" placeholder="Search an author, work, editor, printer or manuscript" aria-label="Search the editions">
+    <select id="eper" aria-label="Period"><option value="">All years</option><option value="1">To 1500</option><option value="2">1501–1530</option><option value="3">1531–1560</option><option value="4">1561–1600</option></select>
+    <select id="egk" aria-label="Editor"><option value="">Any editor</option><option value="y">A Greek-speaking editor</option><option value="n">A Western editor</option><option value="u">Editor not known</option></select>
+    <select id="ecl" aria-label="Kind"><option value="">All kinds</option><option value="core">Texts written before 1453</option><option value="grammar">Grammars</option><option value="liturgical">Liturgical books</option><option value="other">Other</option></select>
+    <label class="ck"><input type="checkbox" id="epc"> With a printer's copy</label>
+    <span class="count" id="ecount"></span>
+  </div>
+  <div class="pinbar" id="epin" hidden></div>
+  <div class="tablewrap"><table class="bt ed">
+    <thead><tr>
+      <th style="text-align:right"><button type="button" data-esort="y">Date</button></th>
+      <th><button type="button" data-esort="au">Author and work</button></th>
+      <th><button type="button" data-esort="ed">Editor</button></th>
+      <th><button type="button" data-esort="pr">Printer</button></th>
+      <th><button type="button" data-esort="pl">Place</button></th>
+      <th>Printer's copy</th>
+    </tr></thead>
+    <tbody id="etbody"></tbody>
+  </table></div>
+</section>
+
+<section id="method" aria-labelledby="method-h">
+  <h2 id="method-h">How we count and how it was made</h2>
+  <div class="method"><div><h3>How we count</h3><div class="mdl"><ul><li>A manuscript counts if a source documents it in Latin Europe by 1600: an inventory or catalog made before 1600, an owner's note or arms before 1600, or a copy dated and placed in the West before 1600. "Latin Europe" is every territory under Latin bishops (all of Italy, Sicily included, after the Norman conquest; Spain; France; the German lands; England; Poland-Lithuania). Greek lands under Latin rule (Crete, Corfu, Cyprus, Rhodes, Chios, Naxos, Negroponte) stay the Greek world.</li><li>A manuscript that is likely but not documented by 1600 is "probable" and is not counted.</li><li><b>Each book counts once.</b> Where an old inventory and a modern catalog describe the same library, the inventory entry is counted and the catalog gives it today's shelfmark when the two can be matched. A book from the catalog is added only if it cannot be one of the inventory's entries: it came after the inventory was made, or it belonged to a different collection.<ul><li>Vatican: the inventory of 1475 (773 Greek books) is counted; 96 entries are matched to today's codices; 93 codices that came after 1475 are added; 451 codices of the old fund that were, or may have been, there in 1475 are not added, because they may be among the 677 entries still unidentified.</li><li>Paris: Catherine de' Medici's inventory of 1589 (604 Greek books, Cardinal Ridolfi's library) is counted; 264 entries are matched to Paris shelfmarks; the 273 other Paris manuscripts marked as hers are not added.</li></ul></li><li>Pinakes is not used.</li></ul></div></div><div><h3>The West</h3><p>Iosif's ruling (3 November 2026): <b>"We count all territories under Latin bishops as the West."</b> So all of Italy is the West, Sicily, Calabria and the Salento included after the Norman conquest (c. 1071–1091), with Spain and Portugal, France, the German lands, England, Poland-Lithuania and the rest of Latin Europe. The Greek lands under Latin rule stay the Greek world: Venetian Crete, Corfu, Cyprus, Rhodes, Chios, Naxos and Negroponte. A book copied at Candia for a Venetian is therefore in group d, and a Greek who moved from Crete to Venice came to the West.</p></div><div><h3>The groups</h3><p>Each counted manuscript is put in one group by where and for whom it was written, as far as the catalogs say:</p><ul class="gl"><li><b>a</b> From the Greek-speaking world: 2,187</li><li><b>b</b> Copied in the West by a Greek scribe: 1,697</li><li><b>c</b> Copied in the West by a Western scribe: 582</li><li><b>d</b> Copied in the Greek world for a Western patron: 16</li><li><b>?</b> Not determinable: 3,750</li></ul><p>A manuscript older than about 1400 with no Western place is taken to come from the Greek world (group a); a book copied in Italy is in group b or c by its scribe. Where the catalog gives neither date nor place, the group is not determinable.</p></div><div><h3>The people</h3><p>Greek speakers first: men and women from Constantinople and the Greek lands (Venetian Crete, Corfu and Cyprus included) and from the Greek-speaking south of Italy, who taught, copied, translated, edited, printed or bought Greek books in the West between the 1340s and 1600. 126 people: 119 on the core list, 5 borderline (among them Anna Notaras as a patron, Niccolò Leonico Tomeo, Galateo and Aemilius Portus) and 2 secondary (Demetrios Mysos and Camillo Zanetti). Leo Allatius and Georgios Koressios are left out: their work falls after 1600. Western pupils appear with their teachers.</p></div><div><h3>The first editions</h3><p>The first printed edition of each Greek text before 1600: 419 editions (texts written before 1453; grammars and liturgical books are marked as such). The list began from Wikipedia's list of editiones principes in Greek, checked edition by edition and enlarged; the Basel Nomocanon of 1561 is left out because it is in Latin only. Printer's copies are given where a study identifies them, above all Sicherl, <i>Griechische Erstausgaben des Aldus Manutius</i> (1997), and Martinelli Tempesta; 24 manuscripts of the list are linked to an edition printed from them.</p></div><div><h3>The sources</h3><p>For the manuscripts, the old inventories and the printed catalogs listed under <a href="#collections">By collection</a>, all in the public domain or used for facts only: the Vatican inventory of 1475 (Müntz and Fabre), Bessarion's deed of 1468 (Omont), the Fontainebleau catalogs and Catherine de' Medici's inventory of 1589 (Omont), Pellicier's list, Orsini's library (de Nolhac), Janus Laskaris' purchases (Müller), the dated scribes of Vogel and Gardthausen, and the catalogs of some fifty libraries from Bandini (1764–70) to the Vatican catalogs of Devreesse, Giannelli and Lilla. <b>From HathiTrust (copies downloaded by Iosif):</b> Omont's <i>Inventaire sommaire des manuscrits grecs de la Bibliothèque nationale</i> (parts 1–3), Rocchi's <i>Codices Cryptenses</i> (Grottaferrata, 1883) and Iriarte's Madrid catalog (1769). For the people: the Dizionario Biografico degli Italiani, the specialist studies cited person by person, and Wikipedia. For the editions: Wikipedia's list, Sicherl, Martinelli Tempesta, library and incunabula catalogs. Every record keeps its own sources.</p><p><b>Pinakes is not used</b>, by Iosif's decision (2 November 2026): the database of the IRHT does not allow its records to be reused without written consent.</p></div><div><h3>The map</h3><p>Land from Natural Earth (1:50m), in a conic projection. People's stations, collectors' acquisitions and editions are placed by the coordinates in the data. Manuscripts are placed with a small gazetteer of the place names that occur in the catalogs; names that are rare, unclear or offer a choice ("Venice or Rome", "Italy", "southern Italy", "not stated; the scribe worked in Venice and Rome") are left unplaced. Of the 8,232 counted manuscripts, 1,852 say where they were copied and 1,261 of these are placed (68%); 2,030 say where they came from and 2,018 are placed (99%); 8,219 (100%) are placed at the city of their collection. 474 of 482 stations of the people, 72 of 108 arrivals in the West (both ends named), 99 of 150 acquisitions and 419 of 419 editions are on the map.</p></div><div><h3>Dates</h3><p>A copy counts as dated when its colophon or a dated note gives the year: 1,088 counted manuscripts, 821 of them copied in the West. Dates given only by century, as "about", or inferred from a scribe's career are not used for the charts or the year slider. Journeys are dated by the year the source gives for the arrival, often a year "by" which the book was there.</p></div></div><h3 class="h3s" id="gaps">What we did not find</h3><p>What is missing, and what would settle it (version 0.9).</p><div class="tablewrap"><table class="mini-t"><thead><tr><th>Gap</th><th>Size</th><th>What would settle it</th></tr></thead><tbody><tr><td>Vatican inventory of 1475: entries without today's shelfmark</td><td class="n">677 of 773</td><td class="s">Devreesse, <i>Le fonds grec de la Bibliothèque Vaticane des origines à Paul V</i> (1965), which identifies the old inventories' entries; a catalog of Vat. gr. 933–1484 (none online)</td></tr><tr><td>Vatican old fund: codices there by 1600 (or by 1475) but not datable against the 1475 inventory</td><td class="n">451 (not added)</td><td class="s">the same; if they outnumber the free entries, the excess is added</td></tr><tr><td>Catherine de' Medici's inventory of 1589: entries without a Paris shelfmark</td><td class="n">340 of 604</td><td class="s">D. Muratore, <i>La biblioteca del cardinale Niccolò Ridolfi</i> (2009); the BnF's online catalog (Archives et manuscrits) record by record</td></tr><tr><td>El Escorial: Greek books with no date of acquisition</td><td class="n">226 probable</td><td class="s">C. Graux, <i>Essai sur les origines du fonds grec de l'Escurial</i> (1880; public domain, not yet fetched); G. de Andrés' catalogs (1965–67)</td></tr><tr><td>Munich and Augsburg: books documented only after 1600</td><td class="n">231 probable</td><td class="s">the Augsburg catalogs of 1575 (Wolf) and 1595 (Hoeschel), not online as text</td></tr><tr><td>Ottoboni: books known only from Duke Altemps' library (bought 1611)</td><td class="n">190 probable</td><td class="s">an inventory of Sirleto's library before 1588</td></tr><tr><td>Ambrosiana: books bought for Borromeo after 1600 (from Gabriel Severos at Venice, in Calabria and the Salento, at Pisa) that were probably in the West earlier</td><td class="n">172 probable</td><td class="s">earlier owners' notes; for the South Italian books, the date and place of copying (a book written there after the Norman conquest was in the West from the start)</td></tr><tr><td>Messina, San Salvatore: books without a note before 1600</td><td class="n">150 probable</td><td class="s">the date and place of copying; old inventories of the monastery's books</td></tr><tr><td>Florence: San Marco and Badia books without a date</td><td class="n">145 probable</td><td class="s">the San Marco inventory of c. 1500 (Ullman and Stadter 1972)</td></tr><tr><td>Oxford, Bodleian: Francesco Barozzi's books (Barocci, Cromwell) without a dated note</td><td class="n">260 probable</td><td class="s">Barozzi's own notes or the 1617 catalog of his collection</td></tr><tr><td>Grottaferrata: old stock without a dated note</td><td class="n">188 probable</td><td class="s">the abbey's inventories of the 15th–16th centuries (e.g. 1575), codex by codex</td></tr><tr><td>Pellicier's list: entries without today's shelfmark</td><td class="n">about 80 of 191</td><td class="s">the Oxford, Leiden and Paris catalogs (Naulot's books)</td></tr><tr><td>Marciana old fund</td><td class="n">394 (counted through Bessarion's deed)</td><td class="s">—</td></tr><tr><td>Group (from the Greek world, copied in the West, etc.) not determinable</td><td class="n">3,750</td><td class="s">date and place of copying in modern catalogs</td></tr></tbody></table></div><p class="small">Still missing: Naples (Cirillo), the Escorial's acquisitions (Graux 1880), Augsburg (1575, 1595), London Burney and Harley vol. 3, Rome Chigi and Barberini, Brussels, Copenhagen; the in-copyright studies for the Vatican (Devreesse 1965), Ridolfi (Muratore 2009) and San Marco (Ullman and Stadter 1972). Pinakes is not used, by Iosif's decision (2 Nov 2026).</p>
+</section>
+
+<section id="versions" aria-labelledby="versions-h">
+  <h2 id="versions-h">Versions</h2>
+  <p class="intro">Each release has a number, 0.x while the work is in progress. Corrections from readers will be logged in the entry of the version that applies them, with the reader credited if they wish.</p><div class="vers"><div class="ver"><div class="vh"><b>0.9</b><span>3 November 2026</span></div><div><p class="vt">Madrid, Grottaferrata, Oxford, Berlin, London, Cambridge, Wolfenbüttel, the Corvina</p><ul><li><b>Sources downloaded by Iosif from HathiTrust:</b> Iriarte, <i>Regiae Bibliothecae Matritensis codices graeci mss.</i> I (1769); Rocchi, <i>Codices Cryptenses</i> (1883).</li><li><b>From archive.org:</b> Coxe's Bodleian Greek catalogs (1853–54: Barocci, Laud, Selden, Auctarium, Canonici), Molhuysen's Codices Scaligerani (1910), the Berlin Greek catalogs (1890, 1897), Warner and Gilson's Royal manuscripts (1921) and the Harleian catalog (vols. 1–2, 4), M. R. James' Corpus Christi and Gonville and Caius catalogs, Köhler's Wolfenbüttel Gudiani (1913), Fraknói's Bibliotheca Corvina (1927).</li><li>8,232 counted (+332); 6,722 with today's shelfmark; 2,359 probable (+569, mostly Barozzi's books and Grottaferrata's old stock).</li><li>107 Pellicier books identified in Berlin (shelfmarks given to his list); 37 Madrid and Grottaferrata books linked to dated copies already held; 13 books known only through Claude Naulot (who acquired Pellicier's library) taken as Pellicier's; 48 Wolfenbüttel records of version 0.6 replaced by Köhler's.</li></ul></div></div><div class="ver"><div class="vh"><b>0.8</b><span>3 November 2026</span></div><div><p class="vt">Paris (Omont's Inventaire sommaire)</p><ul><li><b>Source downloaded by Iosif from HathiTrust:</b> H. Omont, <i>Inventaire sommaire des manuscrits grecs de la Bibliothèque nationale</i>, parts 1–3 (1886–88).</li><li>7,900 manuscripts counted (+118); 6,385 with today's shelfmark; 1,790 probable.</li><li>264 of Catherine de' Medici's 604 books matched to Paris shelfmarks; 85 books of Jean Hurault de Boistaillé (d. 1572) and 14 more Fontainebleau books added; about 30 added on their own evidence; 13 double counts removed.</li></ul></div></div><div class="ver"><div class="vh"><b>0.7</b><span>3 November 2026</span></div><div><p class="vt">The Vatican catalogs</p><ul><li>Devreesse (Vat. gr. 330–866), Schreiner (867–932), Giannelli (1485–1683), Canart's history of the later fund, Lilla (Columnenses; 2644–2663), Turyn (dated 13th–14th-c. codices), used for facts only.</li><li>7,782 counted (+283). 96 entries of the 1475 inventory matched. Correction: the Columnenses are Cardinal Giovanni Salviati's library (Matal's list of 1546), not Sirleto's.</li></ul></div></div><div class="ver"><div class="vh"><b>0.6</b><span>3 November 2026</span></div><div><p class="vt">Some 40 more public-domain catalogs</p><ul><li>Vat. gr. 1–329 (Mercati 1923); Florence, Rome, Modena, Bologna and other Italian libraries (Studi italiani di filologia classica); Martini's catalog and the Vallicelliana; Messina, San Salvatore; Turin; Tübingen (Crusius), Leiden (Vulcanius), Wolfenbüttel, Leipzig, Sweden, Copenhagen; the Arundel manuscripts and Cambridge; French provincial libraries; Omont's list of the scribes of the Paris fund; the papal library of 1295–1311; Reiser's Augsburg index of 1675.</li><li>7,499 counted (+1,017). Corrections: three copies made after 1600 and 23 Latin codices with a few Greek lines no longer count.</li></ul></div></div><div class="ver"><div class="vh"><b>0.5</b><span>3 November 2026</span></div><div><p class="vt">Catherine de' Medici, Urbino, Ambrosiana I, Ottoboni, Reginenses</p><ul><li>6,482 counted (+964). Correction: Sirleto's library went to Ascanio Colonna in 1588 and only in 1611 to Altemps, so Altemps-only books are probable.</li></ul></div></div><div class="ver"><div class="vh"><b>0.4</b><span>3 November 2026</span></div><div><p class="vt">Palatine, Marciana, Vienna, Ambrosiana II, Switzerland, Spain and Portugal, Breslau, Oxford</p><ul><li>5,518 counted (+1,514). Bessarion's deed of 1468 matched to Marciana shelfmarks (121 entries).</li></ul></div></div><div class="ver"><div class="vh"><b>0.3</b><span>3 November 2026</span></div><div><p class="vt">The Laurentian, the Escorial, Munich; "the West" defined</p><ul><li>4,004 counted. Iosif's ruling: the West is every territory under Latin bishops; Greek lands under Latin rule stay the Greek world.</li></ul></div></div><div class="ver"><div class="vh"><b>0.2</b><span>2 November 2026</span></div><div><p class="vt">The first inventories</p><ul><li>Bessarion 1468, Fontainebleau c. 1550, Pellicier, the Vatican 1475, Orsini, Laskaris' purchases, Vogel and Gardthausen's dated scribes: 2,664 counted. Pinakes dropped; the four groups (a/b/c/d) adopted.</li></ul></div></div><div class="ver"><div class="vh"><b>0.1</b><span>31 October 2026</span></div><div><p class="vt">People, editions, collections</p><ul><li>120 people, 417 first editions, 52 collections; first estimate of 6,000–8,000 Greek manuscripts in Latin Europe by 1600.</li></ul></div></div></div>
+</section>
+
+<section id="downloads" aria-labelledby="dl-h">
+  <h2 id="dl-h">Downloads</h2>
+  <p class="intro">The data of version 0.9, as shown on this page, for anyone to use with credit. The events file gives every movement with a date and two places with coordinates, for maps and films.</p>
+  <div class="dlgrid">
+    <div class="card"><span class="label">Manuscripts</span><p>Counted and probable, 10,591 rows: shelfmark today, collection, date, contents, scribe, places with coordinates, group, why it counts, source.</p><div class="btnrow"><a class="btn" href="dl/greeks-who-taught-greek-manuscripts.csv" download>Manuscripts (.csv)</a></div></div>
+    <div class="card"><span class="label">People</span><p>The 126 people with their dates, roles, arrival in the West, stations, pupils and sources.</p><div class="btnrow"><a class="btn" href="dl/greeks-who-taught-greek-people.csv" download>People (.csv)</a></div></div>
+    <div class="card"><span class="label">First editions</span><p>The 419 editions with editors, printers, places and the printer's copies.</p><div class="btnrow"><a class="btn" href="dl/greeks-who-taught-greek-editions.csv" download>Editions (.csv)</a></div></div>
+    <div class="card"><span class="label">Events</span><p>Every movement: people's moves and arrivals, acquisitions, manuscripts reaching their collections, copies made, editions printed and printer's copies changing hands.</p><div class="btnrow"><a class="btn" href="dl/greeks-who-taught-greek-events.csv" download>Events (.csv)</a></div></div>
+    <div class="card"><span class="label">Everything</span><p>All the tables in one file, as JSON, or as a workbook with the table of collections and the collectors' acquisitions.</p><div class="btnrow"><a class="btn" href="dl/greeks-who-taught-greek-data.json" download>Data (.json)</a><a class="btn ghost" href="dl/greeks-who-taught-greek.xlsx" download>Workbook (.xlsx)</a></div></div>
+  </div>
+</section>
+
+<footer>
+  <div class="stamp" id="stamp2">Version 0.9 · 3 November 2026 · work in progress</div>
+  <p><b>The Greeks Who Taught Greek to the West, 1340s–1600</b>. A work in progress by Iosif Lazaridis (@iosif_lazaridis on X), supervising research by Anthropic&#x27;s Claude, from public sources.</p>
+  <p>Each record keeps its sources. Pinakes is not used. Map: Natural Earth. <a href="https://iosiflazaridis.github.io/greeks-who-taught-greek/">https://iosiflazaridis.github.io/greeks-who-taught-greek/</a></p>
+</footer>
+</div>
+
+<script src="data/meta.js?v=0.9"></script>
+<script src="data/geo.js?v=0.9"></script>
+<script src="data/map.js?v=0.9"></script>
+<script src="data/people.js?v=0.9"></script>
+<script src="data/editions.js?v=0.9"></script>
+<script src="data/collections.js?v=0.9"></script>
+<script src="data/manuscripts.js?v=0.9"></script>
+<script>
+(() => {
+"use strict";
+const META = window.GW_META, TIME = window.GW_TIME, G = window.GW_GEO, MAP = window.GW_MAP, P = window.GW_PEOPLE, E = window.GW_EDITIONS;
+const ROWS = window.GW_ROWS, COLL = window.GW_COLLECTORS, S = window.GW_MSS.S, MR = window.GW_MSS.R;
+const $ = s => document.querySelector(s);
+const NS = "http://www.w3.org/2000/svg";
+const el = (t, a, p) => { const e = document.createElementNS(NS, t); let st = ""; for (const k in a) { const v = a[k]; if ((k === "fill" || k === "stroke") && typeof v === "string" && v.startsWith("var(")) st += `${k}:${v};`; else if (k !== "style") e.setAttribute(k, v); } if (st || a.style) e.setAttribute("style", st + (a.style || "")); if (p) p.appendChild(e); return e; };
+const h = (t, cls, txt) => { const e = document.createElement(t); if (cls) e.className = cls; if (txt != null) e.textContent = txt; return e; };
+const fmt = n => Number(n).toLocaleString("en-US");
+const fold = s => (s || "").normalize("NFD").replace(/[̀-ͯ]/g, "").toLowerCase();
+const pl = (n, one, many) => `${fmt(n)} ${n === 1 ? one : (many || one + "s")}`;
+const cut = (s, n) => { s = s || ""; if (s.length <= n) return s; const t = s.slice(0, n); const i = t.lastIndexOf(" "); return (i > n * 0.6 ? t.slice(0, i) : t).replace(/[\s,;:.(]+$/, "") + "…"; };
+const cap1 = s => s ? s[0].toUpperCase() + s.slice(1) : s;
+const cmpS = (a, b) => String(a || "￿").localeCompare(String(b || "￿"), "en", { numeric: true, sensitivity: "base" });
+const onKey = (tr, fn) => { tr.tabIndex = 0; tr.onclick = fn; tr.onkeydown = ev => { if (ev.key === "Enter" || ev.key === " ") { ev.preventDefault(); fn(); } }; };
+const scrollTo = sel => { const t = typeof sel === "string" ? $(sel) : sel; if (t) t.scrollIntoView({ behavior: "smooth", block: "start" }); };
+// manuscript record fields (see site_build.py)
+const F = { st: 0, row: 1, sh: 2, dt: 3, ct: 4, sc: 5, cw: 6, cf: 7, ow: 8, gp: 9, why: 10, src: 11, srcf: 12, ent: 13, cen: 14, col: 15, cy: 16 };
+const GROUPS = Object.fromEntries(META.groups.map(([k, n]) => [k, n]));
+const GCLS = { a: "ga", b: "gb", c: "gc", d: "gd", "?": "gq" };
+const PLC = MAP.places;
+const rowLab = i => ROWS[i].lab;
+
+// ---------- facts
+[[META.counted, "Greek manuscripts documented in Latin Europe by 1600"], [META.probable, "more that are probable, not counted"],
+ [META.people, "Greek teachers, scribes, translators and editors"], [META.editions, "first editions of Greek texts, to 1600"],
+ [META.collectors, `collectors and libraries, with ${META.acq} acquisitions traced`]].forEach(([b, s]) => {
+  const d = h("div", "fact"); d.append(h("b", null, fmt(b)), h("span", null, s)); $("#facts").append(d); });
+
+// ---------- links between the parts of the page
+const msToEd = {};
+E.forEach((e, i) => e.pc.forEach(pc => pc[4].forEach(k => { (msToEd[k] = msToEd[k] || []).push(i); })));
+
+// =====================================================================================  the map
+const LAYERS = [
+  { k: "T", name: "Teachers", sw: "dot", col: "var(--lT)" },
+  { k: "L", name: "Libraries", sw: "ringL", col: "var(--lL)" },
+  { k: "J", name: "Journeys", sw: "ln", col: "var(--lJ)" },
+  { k: "C", name: "Copies made in the West", sw: "dot", col: "var(--lC)" },
+  { k: "E", name: "First editions", sw: "dia", col: "var(--lE)" },
+];
+const WIN = 20, Y0 = 1340, Y1 = 1600, YMIN = Y0 + WIN - 1;
+const state = { on: { T: true, L: true, J: true, C: true, E: true }, year: null, sel: null, open: null, person: null, west: false };
+const svg = $("#mapsvg"), box = $("#mapbox"), tip = $("#tip");
+const W = G.W, H = G.H;
+let vb = { x: 0, y: 0, w: W, h: H };
+svg.setAttribute("viewBox", `0 0 ${W} ${H}`);
+el("rect", { x: -50, y: -50, width: W + 100, height: H + 100, fill: "var(--sea)" }, svg);
+el("path", { class: "m-grat", d: G.grat }, svg);
+el("path", { class: "m-land", d: G.land }, svg);
+const gSea = el("g", {}, svg), gJ = el("g", {}, svg), gMk = el("g", {}, svg), gRoute = el("g", {}, svg), gSel = el("g", {}, svg), gLab = el("g", {}, svg);
+const inWin = y => state.year == null || (y != null && y >= state.year - WIN + 1 && y <= state.year);
+const stationIn = t => state.year == null || (t[1] != null && t[1] <= state.year && t[2] >= state.year - WIN + 1);
+let CUR = { A: new Map(), J: new Map() };
+function compute() {
+  const A = new Map(), on = state.on;
+  const g = i => { let a = A.get(i); if (!a) A.set(i, a = { i, T: new Map(), L: [], lc: 0, lp: 0, C: [], E: [], Jin: [], Jout: [] }); return a; };
+  if (on.T) MAP.T.forEach(t => { if (!stationIn(t)) return; const a = g(t[0]); if (!a.T.has(t[3])) a.T.set(t[3], []); a.T.get(t[3]).push(t); });
+  if (on.L) MAP.L.forEach(l => { const a = g(l[0]); a.L.push(l); a.lc += l[2]; a.lp += l[3]; });
+  if (on.C) MAP.C.forEach(c => { if (inWin(c[1])) g(c[0]).C.push(c); });
+  if (on.E) MAP.E.forEach(e => { if (inWin(e[1])) g(e[0]).E.push(e); });
+  const J = new Map();
+  if (on.J) MAP.J.forEach(j => { if (!inWin(j[2])) return; if (!state.west && !PLC[j[0]][3]) return;
+    const k = j[0] + ">" + j[1]; let o = J.get(k); if (!o) J.set(k, o = { f: j[0], t: j[1], n: 0, it: [] }); o.n += j[5]; o.it.push(j); g(j[0]).Jout.push(j); g(j[1]).Jin.push(j); });
+  A.forEach(a => { a.nJ = a.Jin.reduce((s, j) => s + j[5], 0) + a.Jout.reduce((s, j) => s + j[5], 0); });
+  return { A, J };
+}
+function pxPerUnit() { return svg.getBoundingClientRect().width / vb.w || 1; }
+let KS = 1;   // marker scale: smaller on a narrow map
+const radL = (n, u) => (2 + 0.55 * KS * Math.sqrt(n)) * u, radT = (n, u) => (2.4 + 1.5 * KS * Math.sqrt(n)) * u, radC = (n, u) => (2.2 + 1.0 * KS * Math.sqrt(n)) * u, radE = (n, u) => (2.6 + 1.0 * KS * Math.sqrt(n)) * 1.2 * u;
+function draw() {
+  const u = 1 / pxPerUnit(), z = W / vb.w;
+  KS = Math.max(0.5, Math.min(1, svg.getBoundingClientRect().width / 820)) * Math.min(1.6, Math.sqrt(z));
+  [gSea, gJ, gMk, gRoute, gSel, gLab].forEach(g => g.textContent = "");
+  CUR = compute(); const { A, J } = CUR;
+  const narrowM = svg.getBoundingClientRect().width < 560;
+  G.seas.forEach(([n, x, y]) => { if (narrowM && z < 1.6 && /Tyrrhenian|Ionian|Levantine|Adriatic/.test(n)) return; const t = el("text", { x, y, "text-anchor": "middle", class: "m-sea", "font-size": (narrowM ? 10 : 12.5) * u }, gSea); t.textContent = n; });
+  // journeys: a curve bending to its right, with an arrowhead near the end
+  [...J.values()].sort((a, b) => b.n - a.n).forEach(o => {
+    const x0 = PLC[o.f][1], y0 = PLC[o.f][2], x1 = PLC[o.t][1], y1 = PLC[o.t][2], dx = x1 - x0, dy = y1 - y0;
+    const cx = (x0 + x1) / 2 - dy * 0.16, cy = (y0 + y1) / 2 + dx * 0.16, east = PLC[o.f][3], col = east ? "var(--lJ)" : "var(--lJw)";
+    const w = Math.min(6.5, 0.8 + 0.45 * Math.sqrt(o.n)) * u;
+    el("path", { d: `M${x0},${y0}Q${cx},${cy} ${x1},${y1}`, class: "m-j", stroke: col, "stroke-width": w, "stroke-opacity": east ? 0.55 : 0.45 }, gJ);
+    const t = 0.7, px = (1 - t) * (1 - t) * x0 + 2 * (1 - t) * t * cx + t * t * x1, py = (1 - t) * (1 - t) * y0 + 2 * (1 - t) * t * cy + t * t * y1;
+    let tx = 2 * (1 - t) * (cx - x0) + 2 * t * (x1 - cx), ty = 2 * (1 - t) * (cy - y0) + 2 * t * (y1 - cy); const tl = Math.hypot(tx, ty) || 1; tx /= tl; ty /= tl;
+    const s = 2.4 * u + w * 0.75;
+    if (Math.hypot(dx, dy) > 6 * s) el("path", { d: `M${px + tx * s},${py + ty * s}L${px - tx * s - ty * s * 0.8},${py - ty * s + tx * s * 0.8}L${px - tx * s + ty * s * 0.8},${py - ty * s - tx * s * 0.8}Z`, fill: col, "fill-opacity": east ? 0.85 : 0.7, class: "m-mk" }, gJ);
+  });
+  // markers: the largest first, so that the small ones stay on top
+  const mk = [];
+  A.forEach(a => {
+    const x = PLC[a.i][1], y = PLC[a.i][2]; a.R = 2.5 * u;
+    if (a.L.length) { const r = radL(a.lc, u), rp = radL(a.lc + a.lp, u); a.R = Math.max(a.R, rp);
+      mk.push({ r: rp, f: () => { if (a.lp) el("circle", { cx: x, cy: y, r: rp, fill: "none", stroke: "var(--lL)", "stroke-width": 1.2 * u, "stroke-dasharray": `${2.6 * u} ${2 * u}`, class: "m-mk" }, gMk);
+        if (a.lc) el("circle", { cx: x, cy: y, r, fill: "var(--lL)", "fill-opacity": 0.2, stroke: "var(--lL)", "stroke-width": 1.5 * u, class: "m-mk" }, gMk); } }); }
+    if (a.E.length) { const s = radE(a.E.length, u); a.R = Math.max(a.R, s); mk.push({ r: s * 0.85, f: () => el("polygon", { points: `${x},${y - s} ${x + s},${y} ${x},${y + s} ${x - s},${y}`, fill: "var(--lE)", stroke: "var(--paper)", "stroke-width": u, class: "m-mk" }, gMk) }); }
+    if (a.C.length) { const r = radC(a.C.length, u); a.R = Math.max(a.R, r); mk.push({ r, f: () => el("circle", { cx: x, cy: y, r, fill: "var(--lC)", stroke: "var(--paper)", "stroke-width": u, class: "m-mk" }, gMk) }); }
+    if (a.T.size) { const r = radT(a.T.size, u); a.R = Math.max(a.R, r); mk.push({ r, f: () => el("circle", { cx: x, cy: y, r, fill: "var(--lT)", stroke: "var(--paper)", "stroke-width": u, class: "m-mk" }, gMk) }); }
+    if (!a.L.length && !a.E.length && !a.C.length && !a.T.size) mk.push({ r: 0, f: () => el("circle", { cx: x, cy: y, r: 2 * u, fill: PLC[a.i][3] ? "var(--lJ)" : "var(--lJw)", class: "m-mk" }, gMk) });
+  });
+  mk.sort((p, q) => q.r - p.r).forEach(m => m.f());
+  // a person's journey
+  if (state.person != null) {
+    const pts = []; P[state.person].st.forEach(s => { if (s[5] != null && (!pts.length || pts[pts.length - 1] !== s[5])) pts.push(s[5]); });
+    if (pts.length > 1) el("path", { class: "m-route", d: "M" + pts.map(i => `${PLC[i][1]},${PLC[i][2]}`).join("L"), "stroke-width": 1.8 * u, "stroke-dasharray": `${5 * u} ${3 * u}` }, gRoute);
+    pts.forEach((i, n) => { el("circle", { cx: PLC[i][1], cy: PLC[i][2], r: 7 * u, fill: "var(--route)", class: "m-mk" }, gRoute);
+      const t = el("text", { x: PLC[i][1], y: PLC[i][2] + 3.2 * u, "text-anchor": "middle", class: "m-rnum", "font-size": 9 * u }, gRoute); t.textContent = n + 1; });
+  }
+  if (state.sel != null) { const a = A.get(state.sel), R = a ? a.R : 5 * u; el("circle", { cx: PLC[state.sel][1], cy: PLC[state.sel][2], r: R + 3.5 * u, class: "m-sel", "stroke-width": 1.8 * u }, gSel); }
+  // labels: the busiest places first; skip a label that would collide
+  const narrow = svg.getBoundingClientRect().width < 560, fs = (narrow ? 11 : 12.5) * u, boxes = [];
+  const inView = (x, y) => x > vb.x && x < vb.x + vb.w && y > vb.y && y < vb.y + vb.h;
+  const edge = b => b.x1 < vb.x + 2 * u || b.x2 > vb.x + vb.w - 2 * u || (b.x2 > vb.x + vb.w - 50 * u && b.y1 < vb.y + 112 * u) || b.y1 < vb.y + 2 * u || b.y2 > vb.y + vb.h - 2 * u;
+  const hit = b => boxes.some(q => !(b.x2 < q.x1 || b.x1 > q.x2 || b.y2 < q.y1 || b.y1 > q.y2)) || edge(b);
+  const wt = a => Math.sqrt(a.lc) + 3 * a.T.size + a.E.length + a.C.length / 2 + Math.sqrt(a.nJ);
+  const maxLab = narrow ? 10 + 8 * z : 16 + 14 * z;
+  const cand = [...A.values()].filter(a => inView(PLC[a.i][1], PLC[a.i][2]) && (a.L.length || a.T.size || a.E.length || a.C.length || a.nJ >= 3)).sort((p, q) => (q.i === state.sel) - (p.i === state.sel) || wt(q) - wt(p)).slice(0, maxLab);
+  if (state.person != null) P[state.person].st.forEach(s => { if (s[5] != null && !cand.some(a => a.i === s[5])) cand.unshift({ i: s[5], R: 7 * u }); });
+  cand.forEach(a => {
+    const x = PLC[a.i][1], y = PLC[a.i][2], o = a.R + 2.5 * u;
+    const t = el("text", { class: "m-lab" + (wt(a) > 25 ? " f3" : ""), "font-size": fs, "stroke-width": 3 * u }, gLab); t.textContent = PLC[a.i][0];
+    let ok = false;
+    for (const [tx, ty, an] of [[x + o, y + 4.3 * u, "start"], [x - o, y + 4.3 * u, "end"], [x, y - o - 1 * u, "middle"], [x, y + o + 10 * u, "middle"]]) {
+      t.setAttribute("x", tx); t.setAttribute("y", ty); t.setAttribute("text-anchor", an); const bb = t.getBBox();
+      const b = { x1: bb.x - u, y1: bb.y + u, x2: bb.x + bb.width + u, y2: bb.y + bb.height - u }; if (!hit(b)) { boxes.push(b); ok = true; break; } }
+    if (!ok) t.remove(); });
+}
+function setVB(n) { const minW = W / 16; n.w = Math.min(W, Math.max(minW, n.w)); n.h = n.w * H / W; n.x = Math.min(Math.max(0, n.x), W - n.w); n.y = Math.min(Math.max(0, n.y), H - n.h); vb = n; svg.setAttribute("viewBox", `${vb.x} ${vb.y} ${vb.w} ${vb.h}`); draw(); }
+function zoomAt(f, cx, cy) { const nw = vb.w / f; setVB({ x: cx - (cx - vb.x) * (nw / vb.w), y: cy - (cy - vb.y) * (nw / vb.w), w: nw, h: 0 }); }
+const toUser = ev => { const b = svg.getBoundingClientRect(); return [vb.x + (ev.clientX - b.left) / b.width * vb.w, vb.y + (ev.clientY - b.top) / b.height * vb.h]; };
+$("#zin").onclick = () => zoomAt(1.6, vb.x + vb.w / 2, vb.y + vb.h / 2);
+$("#zout").onclick = () => zoomAt(1 / 1.6, vb.x + vb.w / 2, vb.y + vb.h / 2);
+$("#zall").onclick = () => setVB({ x: 0, y: 0, w: W, h: H });
+svg.addEventListener("dblclick", ev => { const [x, y] = toUser(ev); zoomAt(1.8, x, y); });
+svg.addEventListener("wheel", ev => { if (!ev.ctrlKey && !ev.metaKey) return; ev.preventDefault(); const [x, y] = toUser(ev); zoomAt(ev.deltaY < 0 ? 1.25 : 0.8, x, y); }, { passive: false });
+function nearest(ev, maxPx) { const [x, y] = toUser(ev), u = 1 / pxPerUnit(); let best = null, bd = 1e9;
+  CUR.A.forEach(a => { const d = Math.hypot(PLC[a.i][1] - x, PLC[a.i][2] - y), lim = (a.R || 3 * u) + maxPx * u; if (d < lim && d / lim < bd) { bd = d / lim; best = a; } }); return best; }
+let drag = null, moved = false; const ptr = new Map(); let pinch = null;
+svg.addEventListener("pointerdown", ev => { svg.setPointerCapture(ev.pointerId); ptr.set(ev.pointerId, [ev.clientX, ev.clientY]); moved = false;
+  if (ptr.size === 2) { const [a, b] = [...ptr.values()]; pinch = { d: Math.hypot(a[0] - b[0], a[1] - b[1]), vb: { ...vb } }; drag = null; } else drag = { x: ev.clientX, y: ev.clientY, vb: { ...vb } }; });
+svg.addEventListener("pointermove", ev => {
+  if (ptr.has(ev.pointerId)) ptr.set(ev.pointerId, [ev.clientX, ev.clientY]);
+  if (pinch && ptr.size === 2) { const [a, b] = [...ptr.values()], d = Math.hypot(a[0] - b[0], a[1] - b[1]), f = d / pinch.d, bb = svg.getBoundingClientRect();
+    const mx = ((a[0] + b[0]) / 2 - bb.left) / bb.width, my = ((a[1] + b[1]) / 2 - bb.top) / bb.height, nw = pinch.vb.w / f;
+    setVB({ x: pinch.vb.x + mx * pinch.vb.w - mx * nw, y: pinch.vb.y + my * pinch.vb.h - my * nw * H / W, w: nw, h: 0 }); moved = true; return; }
+  if (drag && ptr.size === 1) { const dx = ev.clientX - drag.x, dy = ev.clientY - drag.y; if (Math.abs(dx) + Math.abs(dy) > 4) { moved = true; svg.classList.add("drag"); }
+    if (moved && drag.vb.w < W) { const b = svg.getBoundingClientRect(); setVB({ x: drag.vb.x - dx / b.width * drag.vb.w, y: drag.vb.y - dy / b.height * drag.vb.h, w: drag.vb.w, h: 0 }); } return; }
+  if (ev.pointerType === "mouse") { const a = nearest(ev, 3); if (a) showTip(a, ev); else tip.hidden = true; } });
+const endPtr = ev => { ptr.delete(ev.pointerId); if (ptr.size < 2) pinch = null; if (ptr.size === 0) { svg.classList.remove("drag");
+  if (!moved && drag) { const a = nearest(ev, ev.pointerType === "mouse" ? 3 : 10); if (a) { selectPlace(a.i); if (ev.pointerType !== "mouse") showTip(a, ev); } else { tip.hidden = true; } } drag = null; } };
+svg.addEventListener("pointerup", endPtr); svg.addEventListener("pointercancel", endPtr);
+svg.addEventListener("pointerleave", () => { if (!drag) tip.hidden = true; });
+function tipLines(a) {
+  const out = [];
+  if (a.T.size) out.push(["dot", "var(--lT)", pl(a.T.size, "person", "people")]);
+  if (a.lc || a.lp) out.push(["dot", "var(--lL)", `${pl(a.lc, "manuscript")} by 1600${a.lp ? `, ${fmt(a.lp)} probable` : ""}`]);
+  if (a.C.length) out.push(["dot", "var(--lC)", pl(a.C.length, "dated copy", "dated copies")]);
+  if (a.E.length) out.push(["dia", "var(--lE)", pl(a.E.length, "first edition")]);
+  const ji = a.Jin.reduce((s, j) => s + j[5], 0), jo = a.Jout.reduce((s, j) => s + j[5], 0);
+  if (ji || jo) out.push(["ln", "var(--lJ)", [ji ? `${fmt(ji)} in` : "", jo ? `${fmt(jo)} out` : ""].filter(Boolean).join(", ") + " (people, acquisitions and manuscripts)"]);
+  return out;
+}
+function showTip(a, ev) { const b = box.getBoundingClientRect(); tip.innerHTML = ""; tip.append(h("b", null, PLC[a.i][0]));
+  tipLines(a).forEach(([cls, col, txt]) => { const d = h("div", "tl1"); const i = h("i", cls); i.style.background = col; d.append(i, document.createTextNode(txt)); tip.append(d); });
+  tip.hidden = false; let x = ev.clientX - b.left + 12, y = ev.clientY - b.top + 12;
+  if (x + 270 > b.width) x = ev.clientX - b.left - 12 - Math.min(260, tip.offsetWidth); if (y + tip.offsetHeight + 8 > b.height) y = Math.max(4, ev.clientY - b.top - tip.offsetHeight - 10);
+  tip.style.left = x + "px"; tip.style.top = y + "px"; }
+new ResizeObserver(() => draw()).observe(svg);
+
+// ---------- layers, years, play
+const lay = $("#layers");
+LAYERS.forEach(L => { const b = h("button", "tab layerbtn"); b.type = "button"; b.dataset.k = L.k; const i = h("i", L.sw); if (L.sw !== "ringL") i.style.background = L.col; b.append(i, document.createTextNode(" " + L.name));
+  b.setAttribute("aria-pressed", "true"); b.onclick = () => toggleLayer(L.k); lay.append(b); });
+function toggleLayer(k) { state.on[k] = !state.on[k]; [...lay.children].forEach(b => b.setAttribute("aria-pressed", state.on[b.dataset.k])); draw(); drawTL(); renderSide(); }
+const yr = $("#yr"), yrout = $("#yrout"), playB = $("#play"), allB = $("#allyears");
+yr.min = YMIN; yr.max = Y1; yr.step = 1; yr.value = 1459;
+let timer = null;
+function stopPlay() { if (timer) { clearTimeout(timer); timer = null; } playB.textContent = "▶ Play"; playB.setAttribute("aria-pressed", "false"); }
+function setYear(y) { state.year = y; allB.setAttribute("aria-pressed", y == null); if (y != null) yr.value = y; yr.style.opacity = y == null ? 0.45 : 1; yrout.textContent = y == null ? "1340–1600, all" : `${y - WIN + 1}–${y}`; draw(); drawTL(); renderSide(); }
+yr.addEventListener("input", () => { stopPlay(); setYear(+yr.value); });
+allB.onclick = () => { stopPlay(); setYear(null); };
+playB.onclick = () => { if (timer) return stopPlay(); let y = state.year == null || state.year >= Y1 ? YMIN : state.year; setYear(y); playB.textContent = "■ Stop"; playB.setAttribute("aria-pressed", "true");
+  const tick = () => { y += 4; if (y > Y1) { setYear(Y1); stopPlay(); return; } setYear(y); timer = setTimeout(tick, 420); }; timer = setTimeout(tick, 420); };
+
+// ---------- the side panel
+function lrow(L, val, sub) { const b = h("button", "lrow" + (state.on[L.k] ? "" : " off")); b.type = "button"; b.setAttribute("aria-pressed", state.on[L.k]); b.title = "Show or hide on the map";
+  const i = h("i", L.sw); if (L.sw !== "ringL") i.style.background = L.col; const tx = h("span"); tx.append(document.createTextNode(L.name + " "), h("span", "sub", sub || ""));
+  b.append(i, tx, h("span", "v", val)); b.onclick = () => toggleLayer(L.k); return b; }
+function totals() {
+  const t = { people: new Set(), plT: 0, lc: 0, lp: 0, plL: 0, C: 0, E: 0, jp: 0, ja: 0, jm: 0 };
+  MAP.T.forEach(s => { if (stationIn(s)) t.people.add(s[3]); });
+  MAP.L.forEach(l => { t.lc += l[2]; t.lp += l[3]; });
+  MAP.C.forEach(c => { if (inWin(c[1])) t.C++; }); MAP.E.forEach(e => { if (inWin(e[1])) t.E++; });
+  MAP.J.forEach(j => { if (!inWin(j[2]) || (!state.west && !PLC[j[0]][3])) return; if (j[3] === 0) t.jp++; else if (j[3] === 1) t.ja++; else t.jm += j[5]; });
+  return t;
+}
+function topPlaces(f, n) { return [...CUR.A.values()].map(a => [PLC[a.i][0], f(a)]).filter(x => x[1] > 0).sort((a, b) => b[1] - a[1]).slice(0, n); }
+function renderSide() {
+  const side = $("#side"); side.textContent = ""; const y = state.year;
+  const hd = h("div"); hd.append(h("div", "label", y == null ? "All years" : "Twenty years"), h("div", "ptitle", y == null ? "1340s–1600" : `${y - WIN + 1}–${y}`)); side.append(hd);
+  const t = totals(), lt = h("div", "ltot");
+  lt.append(lrow(LAYERS[0], fmt(t.people.size), y == null ? "people" : "people at work"));
+  lt.append(lrow(LAYERS[1], fmt(t.lc), `manuscripts placed (of ${fmt(META.counted)})${t.lp ? ", +" + fmt(t.lp) + " probable" : ""}`));
+  lt.append(lrow(LAYERS[2], fmt(t.jp + t.ja + t.jm), `${t.jp} people, ${t.ja} acquisitions, ${fmt(t.jm)} manuscripts`));
+  lt.append(lrow(LAYERS[3], fmt(t.C), "dated copies"));
+  lt.append(lrow(LAYERS[4], fmt(t.E), "editions"));
+  side.append(lt);
+  const lg = h("div", "lg2");
+  const lgi = (cls, col, txt) => { const s = h("span"); const i = h("i", cls); if (col) i.style.background = col; s.append(i, document.createTextNode(txt)); return s; };
+  lg.append(lgi("ln", "var(--lJ)", "Journey from the Greek world"), lgi("ln", "var(--lJw)", "Journey within the West"), lgi("ringP", null, "Library with its probable manuscripts"));
+  const ck = h("label", "ck lg2"); const cb = h("input"); cb.type = "checkbox"; cb.checked = state.west; cb.onchange = () => { state.west = cb.checked; draw(); renderSide(); };
+  ck.append(cb, document.createTextNode(" Show journeys within the West")); ck.style.display = "flex"; ck.style.gap = "6px"; lg.append(ck);
+  side.append(lg);
+  const most = [[state.on.T, "Most teachers", a => a.T.size], [state.on.C, "Most dated copies", a => a.C.length], [state.on.E, "Most first editions", a => a.E.length]];
+  most.forEach(([on, lab, f]) => { if (!on) return; const tp = topPlaces(f, 5); if (!tp.length) return; const p = h("div", "small"); p.append(h("b", null, lab + ": "), document.createTextNode(tp.map(([n, v]) => `${n} ${v}`).join(", "))); side.append(p); });
+  if (y != null && !t.people.size && !t.C && !t.E && !(t.jp + t.ja + t.jm)) side.append(h("div", "small", "Nothing dated in these years."));
+  if (state.person != null) side.append(personCard());
+  if (state.sel != null) side.append(placeCard(state.sel));
+  if (state.sel == null && state.person == null) side.append(h("div", "hint", "Select a place on the map for the people, libraries, copies, editions and journeys there."));
+}
+function selectPlace(i) { state.sel = i; state.open = null; draw(); renderSide(); if (window.matchMedia("(max-width: 920px)").matches) { const d = $("#side .sel"); if (d) d.scrollIntoView({ block: "nearest", behavior: "smooth" }); } }
+function bitem(dotCls, col, title, sub, onclick, on) { const it = h("button", "bitem" + (on ? " on" : "")); it.type = "button"; const i = h("i", dotCls); if (col) i.style.background = col; it.append(i);
+  const tx = h("span"); tx.append(h("b", null, title)); if (sub) tx.append(h("br"), document.createTextNode(sub)); it.append(tx); it.onclick = onclick; return it; }
+const stYears = s => s[1] || s[2] ? `${s[1] || "?"}${s[2] && s[2] !== s[1] ? "–" + s[2] : ""}` : "dates not known";
+function placeCard(pi) {
+  const a = CUR.A.get(pi), c = h("div", "card sel");
+  const hd = h("div", "shead"); hd.append(h("h3", null, PLC[pi][0]), h("span", "hint", state.year == null ? "all years" : `${state.year - WIN + 1}–${state.year}`)); c.append(hd);
+  if (!a) { c.append(h("div", "small", "Nothing here in these years or in the layers shown.")); }
+  else {
+    if (a.T.size) { c.append(lab("dot", "var(--lT)", `Teachers here · ${a.T.size}`)); const l = h("div", "blist");
+      [...a.T.entries()].sort((p, q) => (p[1][0][1] || 9999) - (q[1][0][1] || 9999)).forEach(([pi2, sts]) => {
+        const key = "p" + pi2, s0 = P[pi2].st.filter(s => s[5] === pi);
+        l.append(bitem("dot", "var(--lT)", P[pi2].n, cut(s0.map(s => `${stYears(s)}${s[3] ? ": " + s[3] : ""}`).join("; "), 170), () => { state.open = state.open === key ? null : key; renderSide(); }, state.open === key));
+        if (state.open === key) l.append(personDetail(pi2, false)); });
+      c.append(l); }
+    if (a.L.length) { c.append(lab("ringL", null, `Libraries · ${fmt(a.lc)} manuscripts by 1600${a.lp ? `, ${fmt(a.lp)} probable` : ""}`)); const l = h("div", "blist");
+      a.L.slice().sort((p, q) => q[2] - p[2]).forEach(r => l.append(bitem("ringL", null, rowLab(r[1]), `${fmt(r[2])} counted${r[3] ? `, ${fmt(r[3])} probable` : ""} · list them`, () => filterMsRow(r[1], PLC[pi][0])))); c.append(l); }
+    if (a.C.length) { c.append(lab("dot", "var(--lC)", `Dated copies made here · ${a.C.length}`)); const l = h("div", "blist");
+      a.C.slice().sort((p, q) => p[1] - q[1]).slice(0, 60).forEach(cc => { const m = MR[cc[2]]; l.append(bitem("dot", "var(--lC)", `${cc[1]} · ${S[m[F.sh]] || "entry " + S[m[F.ent]]}`, cut([S[m[F.sc]], S[m[F.ct]]].filter(Boolean).join(" · "), 140), () => showMs(cc[2]))); });
+      c.append(l); const b = h("button", "linkbtn", `List the ${a.C.length} in the manuscript table`); b.type = "button"; b.onclick = () => showMsSet(a.C.map(cc => cc[2]), `the dated copies made at ${PLC[pi][0]}${state.year == null ? "" : `, ${state.year - WIN + 1}–${state.year}`}`); c.append(b); }
+    if (a.E.length) { c.append(lab("dia", "var(--lE)", `First editions printed here · ${a.E.length}`)); const l = h("div", "blist");
+      a.E.slice().sort((p, q) => p[1] - q[1]).slice(0, 80).forEach(ee => { const e = E[ee[2]]; l.append(bitem("dia", "var(--lE)", `${ee[1]} · ${e.au}`, cut(e.w, 120), () => showEd(ee[2]))); });
+      c.append(l); const b = h("button", "linkbtn", `List the ${a.E.length} in the table of editions`); b.type = "button"; b.onclick = () => showEdSet(a.E.map(ee => ee[2]), `the first editions printed at ${PLC[pi][0]}${state.year == null ? "" : `, ${state.year - WIN + 1}–${state.year}`}`); c.append(b); }
+    if (a.Jin.length || a.Jout.length) { c.append(lab("ln", "var(--lJ)", "Journeys")); const l = h("div", "blist");
+      [[a.Jin, "from", 0], [a.Jout, "to", 1]].forEach(([js, w, end]) => {
+        const by = new Map(); js.forEach(j => { const o = end ? j[1] : j[0]; if (!by.has(o)) by.set(o, []); by.get(o).push(j); });
+        [...by.entries()].sort((p, q) => q[1].reduce((s, j) => s + j[5], 0) - p[1].reduce((s, j) => s + j[5], 0)).slice(0, 12).forEach(([o, jj]) => {
+          const n = jj.reduce((s, j) => s + j[5], 0), east = PLC[end ? pi : o][3];
+          l.append(bitem("ln", east ? "var(--lJ)" : "var(--lJw)", `${w} ${PLC[o][0]} · ${fmt(n)}`, jj.slice(0, 4).map(jText).join("; ") + (jj.length > 4 ? "; …" : ""), () => {})); }); });
+      c.append(l); }
+  }
+  const b = h("button", "linkbtn", "Close"); b.type = "button"; b.onclick = () => { state.sel = null; state.open = null; draw(); renderSide(); }; c.append(b);
+  return c;
+}
+function jText(j) { if (j[3] === 0) return `${P[j[4]].n}${j[2] ? ", " + j[2] : ""}`; if (j[3] === 1) { const c = COLL[j[4][0]], q = c.acq[j[4][1]]; return `${c.n.split(/[(,;]/)[0].trim()}: ${q[5] || "books"} (${q[7]})${q[1] ? ", " + q[1] : ""}`; }
+  return `${pl(j[5], "manuscript")} for ${rowLab(j[4])}${j[2] ? ", by " + j[2] : ""}`; }
+function lab(cls, col, txt) { const d = h("div", "lbl"); const i = h("i", cls); if (col) i.style.background = col; d.append(i, document.createTextNode(txt)); return d; }
+function personCard() { const p = P[state.person], c = h("div", "card sel");
+  const hd = h("div", "shead"); hd.append(h("h3", null, p.n), h("span", "hint", "the journey of a life")); c.append(hd);
+  if (p.g) c.append(h("div", "gname", p.g));
+  const tb = h("table", "stl"); let n = 0, last = null;
+  p.st.forEach(s => { const tr = h("tr"); if (s[5] != null && s[5] !== last) { n++; last = s[5]; } tr.append(h("td", "y", s[5] != null ? String(n) : "·"), h("td", "y", stYears(s)), h("td", "p", s[0]), h("td", "r", s[3])); tb.append(tr); });
+  c.append(tb);
+  const bl = h("div", "btnline"); const b1 = h("button", "linkbtn", "Show in the list"); b1.type = "button"; b1.onclick = () => showPerson(state.person);
+  const b2 = h("button", "linkbtn", "Close"); b2.type = "button"; b2.onclick = () => { state.person = null; draw(); renderSide(); }; bl.append(b1, b2); c.append(bl); return c; }
+
+// ---------- the decade strip under the map
+function drawTL() {
+  const s = $("#tl"); s.textContent = ""; const Wt = 900, Ht = 118, L = 30, R = 8, T = 20, B = 20, pw = Wt - L - R, ph = Ht - T - B; s.setAttribute("viewBox", `0 0 ${Wt} ${Ht}`);
+  const n = TIME.bins.length, bw = pw / n, X = y => L + (y - Y0) / 10 * bw;
+  const ser = [["T", "arr", "var(--lT)"], ["J", "acqb", "var(--lJ)"], ["C", "cpb", "var(--lC)"], ["C", "cpc", "var(--lC2)"], ["E", "edg", "var(--lE)"], ["E", "edw", "var(--lE2)"], ["E", "edu", "var(--lU)"]].filter(x => state.on[x[0]]);
+  const tot = TIME.bins.map((_, i) => ser.reduce((a, x) => a + TIME[x[1]][i], 0)), ymax = Math.max(10, Math.ceil(Math.max(...tot) / 10) * 10);
+  for (let v = 0; v <= ymax; v += ymax > 150 ? 100 : ymax > 60 ? 50 : 20) { const yy = T + ph - v / ymax * ph; el("line", { x1: L, x2: Wt - R, y1: yy, y2: yy, stroke: "var(--rule)" }, s); const t = el("text", { x: L - 4, y: yy + 4, "text-anchor": "end", "font-size": 10.5, fill: "var(--muted)" }, s); t.textContent = v; }
+  if (state.year != null) el("rect", { x: X(state.year - WIN + 1), y: T, width: WIN / 10 * bw, height: ph, fill: "var(--hi)" }, s);
+  TIME.bins.forEach((b, i) => { let acc = 0; const x = L + i * bw + 1.5, w = bw - 3;
+    ser.forEach(([, k, col]) => { const v = TIME[k][i]; if (!v) return; const hh = v / ymax * ph; el("rect", { x, y: T + ph - acc - hh, width: w, height: hh, fill: col, style: "pointer-events:none" }, s); acc += hh; });
+    const hit = el("rect", { x: L + i * bw, y: T, width: bw, height: ph, fill: "transparent", style: "cursor:pointer" }, s);
+    const tt = el("title", {}, hit); tt.textContent = `${b}s: ${tot[i]} dated events · select to see ${b}–${b + WIN - 1}`;
+    hit.onclick = () => { stopPlay(); setYear(Math.max(YMIN, Math.min(Y1, b + WIN - 1))); }; });
+  [1350, 1400, 1450, 1500, 1550, 1600].forEach(y => { const t = el("text", { x: X(y), y: Ht - 5, "text-anchor": y === 1600 ? "end" : "middle", "font-size": 11, fill: "var(--muted)" }, s); t.textContent = y; });
+  const tt = el("text", { x: L, y: 12, "font-size": 10.5, "font-weight": 600, "letter-spacing": "0.08em", fill: "var(--ink-2)" }, s); tt.textContent = "DATED EVENTS PER DECADE · SELECT A DECADE";
+}
+
+// =====================================================================================  through time
+function chart(card, cfg) {
+  const s = el("svg", { viewBox: "0 0 600 210", role: "img", "aria-label": cfg.title }, null); const Wc = 600, Hc = 210, L = 34, R = 8, T = 22, B = cfg.dots ? 46 : 26, pw = Wc - L - R, ph = Hc - T - B;
+  const n = TIME.bins.length, bw = pw / n, X = y => L + (y - Y0) / 10 * bw;
+  const tot = TIME.bins.map((_, i) => cfg.ser.reduce((a, x) => a + TIME[x[0]][i], 0)), mx = Math.max(...tot);
+  const step = mx > 150 ? 50 : mx > 60 ? 20 : mx > 25 ? 10 : 5, ymax = Math.max(step, Math.ceil(mx / step) * step);
+  for (let v = 0; v <= ymax; v += step) { const yy = T + ph - v / ymax * ph; el("line", { x1: L, x2: Wc - R, y1: yy, y2: yy, stroke: "var(--rule)" }, s); const t = el("text", { x: L - 5, y: yy + 4, "text-anchor": "end", "font-size": 11, fill: "var(--muted)" }, s); t.textContent = v; }
+  [[1438, "1438–39"], [1453, "1453"]].forEach(([y, lb], k) => { const x = X(y); el("line", { x1: x, x2: x, y1: T - 4, y2: T + ph, stroke: "var(--ink-2)", "stroke-dasharray": "2 3" }, s); const t = el("text", { x: x + (k ? 3 : -3), y: T - 7, "text-anchor": k ? "start" : "end", "font-size": 10, fill: "var(--ink-2)" }, s); t.textContent = lb; });
+  TIME.bins.forEach((b, i) => { let acc = 0; const x = L + i * bw + 2, w = bw - 4;
+    cfg.ser.forEach(([k, col, name]) => { const v = TIME[k][i]; if (!v) return; const hh = v / ymax * ph; const r = el("rect", { x, y: T + ph - acc - hh, width: w, height: hh, fill: col, class: "cbar" }, s);
+      const tt = el("title", {}, r); tt.textContent = `${b}s: ${v} ${name}${cfg.ser.length > 1 ? ` (of ${tot[i]})` : ""}`; acc += hh; });
+    if (tot[i] && tot[i] === mx) { const t = el("text", { x: x + w / 2, y: T + ph - acc - 3, "text-anchor": "middle", "font-size": 10.5, "font-weight": 600, fill: "var(--ink)" }, s); t.textContent = tot[i]; }
+    if (cfg.dots) { const v = TIME[cfg.dots[0]][i]; for (let d = 0; d < v; d++) { const ci = el("circle", { cx: x + w / 2, cy: T + ph + 9 + d * 5.5, r: 2.3, fill: cfg.dots[1] }, s); const tt = el("title", {}, ci); tt.textContent = `${b}s: ${v} ${cfg.dots[2]}`; } } });
+  [1350, 1400, 1450, 1500, 1550, 1600].forEach(y => { const t = el("text", { x: X(y), y: Hc - 6, "text-anchor": y === 1600 ? "end" : "middle", "font-size": 11, fill: "var(--muted)" }, s); t.textContent = y; });
+  card.append(s);
+}
+function renderCharts() {
+  const box_ = $("#charts"), sum = k => TIME[k].reduce((a, b) => a + b, 0);
+  const cfgs = [
+    { title: "Teachers arriving in the West", cap: `${sum("arr")} of the ${META.people} people, by the year they came (or are first found) in the West.`, ser: [["arr", "var(--lT)", "people arriving"]] },
+    { title: "Manuscripts copied in the West (dated)", cap: `${fmt(sum("cpb") + sum("cpc"))} counted manuscripts with a year in the colophon or a dated note, copied in the West.`, ser: [["cpb", "var(--lC)", "by a Greek scribe"], ["cpc", "var(--lC2)", "by a Western scribe"]] },
+    { title: "Books from the Greek world (dated)", cap: `${fmt(sum("acqb"))} counted manuscripts that came from the Greek world, by the year of arrival the source gives; the dots below are the ${sum("acq")} dated acquisitions from the Greek world in the collectors' records.`, ser: [["acqb", "var(--lJ)", "manuscripts arriving"]], dots: ["acq", "var(--ink-2)", "acquisitions in the collectors' records"] },
+    { title: "First editions", cap: `${sum("edg") + sum("edw") + sum("edu")} first editions of Greek texts, by the year printed and by their editor.`, ser: [["edg", "var(--lE)", "with a Greek-speaking editor"], ["edw", "var(--lE2)", "with a Western editor"], ["edu", "var(--lU)", "editor not known"]] },
+  ];
+  cfgs.forEach(cfg => { const c = h("div", "chart"); c.append(h("h3", null, cfg.title), h("div", "cap", cfg.cap));
+    if (cfg.ser.length > 1 || cfg.dots) { const lg = h("div", "lg"); cfg.ser.forEach(([, col, nm]) => { const sp = h("span"); const i = h("i", "dot"); i.style.background = col; sp.append(i, document.createTextNode(nm)); lg.append(sp); });
+      if (cfg.dots) { const sp = h("span"); const i = h("i", "dot"); i.style.background = cfg.dots[1]; i.style.borderRadius = "50%"; i.style.width = i.style.height = "7px"; sp.append(i, document.createTextNode("an acquisition")); lg.append(sp); } c.append(lg); }
+    chart(c, cfg); box_.append(c); });
+}
+
+// =====================================================================================  who they were
+const ROLES = [...new Set(P.flatMap(p => p.r))].sort((a, b) => P.filter(p => p.r.includes(b)).length - P.filter(p => p.r.includes(a)).length);
+ROLES.forEach(r => { const o = h("option", null, `${r} (${P.filter(p => p.r.includes(r)).length})`); o.value = r; $("#prole").append(o); });
+META.tiers.forEach(([t, n]) => { const o = h("option", null, `${t} (${n})`); o.value = t; $("#ptier").append(o); });
+P.forEach(p => p._s = fold([p.n, p.g, p.bp, p.hr, p.r.join(" "), p.af, p.ap, p.ao, p.st.map(s => s.join(" ")).join(" "), p.pu.map(u => u.join(" ")).join(" ")].join(" ")));
+const pst = { sort: null, dir: 1, open: null, pin: null };
+const arrP = p => p.ay == null ? 0 : p.ay < 1453 ? 1 : p.ay <= 1500 ? 2 : 3;
+function renderPeople() {
+  const q = fold($("#pq").value.trim()), ro = $("#prole").value, ti = $("#ptier").value, ar = $("#parr").value;
+  let idx = pst.pin != null ? [pst.pin] : P.map((_, i) => i).filter(i => { const p = P[i]; return (!q || p._s.includes(q)) && (!ro || p.r.includes(ro)) && (!ti || p.t === ti) && (ar === "" || arrP(p) === +ar); });
+  if (pst.sort) idx.sort((a, b) => { const A = P[a][pst.sort], B = P[b][pst.sort]; return (pst.sort === "ay" ? (A == null ? 9999 : A) - (B == null ? 9999 : B) : cmpS(A, B)) * pst.dir || a - b; });
+  pinbar("#ppin", pst.pin != null ? `Showing ${P[pst.pin].n}` : null, () => { pst.pin = null; renderPeople(); });
+  const tb = $("#ptbody"); tb.textContent = ""; const fr = document.createDocumentFragment();
+  idx.forEach(i => { const p = P[i], tr = h("tr", "row"); tr.setAttribute("aria-expanded", pst.open === i);
+    const nm = h("td", "nm"); nm.append(h("b", null, p.n)); if (p.t !== "core") nm.append(h("span", "tier", p.t)); if (p.g) nm.append(h("span", "gk", p.g));
+    tr.append(nm, h("td", "wh", [p.b, p.d].some(Boolean) ? `${p.b || "?"} – ${p.d || "?"}` : "–"), h("td", "wh", p.bp || "–"), h("td", "ro", p.r.join(", ")), h("td", "dt", p.ay ? String(p.ay) : (p.w ? "born in the West" : "–")));
+    onKey(tr, () => { pst.open = pst.open === i ? null : i; renderPeople(); }); fr.append(tr);
+    if (pst.open === i) { const m = h("tr", "more"), td = h("td"); td.colSpan = 5; td.append(personDetail(i, true)); m.append(td); fr.append(m); } });
+  tb.append(fr); $("#pcount").textContent = `${idx.length} of ${P.length}`;
+}
+function personDetail(i, full) {
+  const p = P[i], c = h("div", full ? "card detail" : "detail inl");
+  if (full) { const hd = h("div"); hd.append(h("h3", null, p.n)); if (p.g) hd.append(h("div", "gname", p.g)); c.append(hd); }
+  const pills = h("div", "pills"); p.r.forEach(r => pills.append(h("span", "pill", r))); pills.append(h("span", "pill", p.t === "core" ? "core list" : p.t)); c.append(pills);
+  const dl = h("dl", "dl"), add = (k, v) => { if (!v) return; dl.append(h("dt", null, k), h("dd", null, v)); };
+  if (!full) add("Greek name", p.g);
+  add("Born", p.b); add("Died", p.d); add("Birthplace", p.bp); add("Home", p.hr);
+  const arr = [p.at, p.af ? "from " + p.af : "", p.ap ? "to " + p.ap : ""].filter(Boolean).join(", ");
+  add("Came to the West", arr ? arr + (p.ao ? ". " + cap1(p.ao) : "") : (p.w ? "born in the West" : ""));
+  c.append(dl);
+  if (p.st.length) { c.append(h("div", "label", "Stations")); const tb = h("table", "stl");
+    p.st.forEach(s => { const tr = h("tr"); tr.append(h("td", "y", stYears(s)), h("td", "p", s[0]), h("td", "r", [s[3], s[4]].filter(Boolean).join(" · "))); tb.append(tr); }); c.append(tb); }
+  if (p.pu.length) { c.append(h("div", "label", "Pupils")); const ul = h("div", "small"); ul.textContent = p.pu.map(u => u[0] + (u[1] || u[2] ? ` (${[u[1], u[2]].filter(Boolean).join(", ")})` : "")).join("; "); c.append(ul); }
+  c.append(srcs(p.src));
+  const bt = h("div", "btnline");
+  if (p.st.some(s => s[5] != null)) { const b = h("button", "linkbtn", "Show the journey on the map"); b.type = "button"; b.onclick = () => { state.person = i; state.sel = null; draw(); renderSide(); scrollTo("#map"); }; bt.append(b); }
+  if (!full) { const b = h("button", "linkbtn", "Show in the list"); b.type = "button"; b.onclick = () => showPerson(i); bt.append(b); }
+  c.append(bt); return c;
+}
+function srcs(list) { const sp = h("div", "srcs"); if (!list || !list.length) return sp; sp.append(h("b", null, "Sources: "));
+  list.forEach(([t, u], k) => { if (k) sp.append(document.createTextNode(" · ")); if (u) { const a = h("a", null, t); a.href = u; a.target = "_blank"; a.rel = "noopener"; sp.append(a); } else sp.append(document.createTextNode(t)); }); return sp; }
+function pinbar(sel, txt, onclear) { const b = $(sel); b.textContent = ""; if (!txt) { b.hidden = true; return; } b.hidden = false; b.append(h("span", null, txt)); const x = h("button", "linkbtn", "Show all"); x.type = "button"; x.onclick = onclear; b.append(x); }
+function showPerson(i) { ["#pq", "#prole", "#ptier", "#parr"].forEach(s => $(s).value = ""); pst.pin = i; pst.open = i; renderPeople(); scrollTo("#people"); }
+["#pq", "#prole", "#ptier", "#parr"].forEach(s => $(s).addEventListener("input", () => { pst.pin = null; pst.open = null; renderPeople(); }));
+document.querySelectorAll("th button[data-psort]").forEach(b => b.onclick = () => { const k = b.dataset.psort; if (pst.sort === k) { if (pst.dir === 1) pst.dir = -1; else { pst.sort = null; pst.dir = 1; } } else { pst.sort = k; pst.dir = 1; } renderPeople(); });
+
+// =====================================================================================  the manuscripts
+ROWS.forEach((r, i) => { const o = h("option", null, `${r.lab} (${fmt(r.c)}${r.p ? " + " + fmt(r.p) : ""})`); o.value = i; $("#mrow").append(o); });
+META.groups.forEach(([k, n, c]) => { const o = h("option", null, `${k} · ${n}`); o.value = k; $("#mgrp").append(o); });
+const CENS = [...new Set(MR.map(m => m[F.cen]))].sort((a, b) => (a || 99) - (b || 99));
+const ord = n => n + (n % 10 === 1 && n !== 11 ? "st" : n % 10 === 2 && n !== 12 ? "nd" : n % 10 === 3 && n !== 13 ? "rd" : "th");
+CENS.forEach(c => { const o = h("option", null, c ? `${ord(c)} century` : "Century not given"); o.value = c; $("#mcen").append(o); });
+let MSF = null;   // folded search strings, made on the first search
+const msS = k => { if (!MSF) MSF = MR.map(m => fold([S[m[F.sh]], S[m[F.dt]], S[m[F.ct]], S[m[F.sc]], S[m[F.cw]], S[m[F.cf]], S[m[F.ow]], S[m[F.why]], S[m[F.src]], S[m[F.srcf]], S[m[F.col]], rowLab(m[F.row])].join(" "))); return MSF[k]; };
+const mst = { page: 0, sort: null, dir: 1, open: null, pin: null, set: null, setLab: "" }, PER = 50;
+const MSORT = { sh: m => S[m[F.sh]] || "￿" + S[m[F.ent]], row: m => rowLab(m[F.row]), dt: m => (m[F.cen] || 99) * 10000 + (m[F.cy] || 0), ct: m => S[m[F.ct]], sc: m => S[m[F.sc]], cw: m => S[m[F.cw]], cf: m => S[m[F.cf]], ow: m => S[m[F.ow]], gp: m => "abcd?".indexOf(m[F.gp]), src: m => S[m[F.src]] };
+function msList() {
+  if (mst.pin != null) return [mst.pin];
+  const q = fold($("#mq").value.trim()), st = $("#mstat").value, r = $("#mrow").value, g = $("#mgrp").value, c = $("#mcen").value;
+  const base = mst.set || MR.map((_, k) => k);
+  let idx = base.filter(k => { const m = MR[k]; return st.includes(String(m[F.st])) && (r === "" || m[F.row] === +r) && (g === "" || m[F.gp] === g) && (c === "" || m[F.cen] === +c) && (!q || msS(k).includes(q)); });
+  if (mst.sort) { const f = MSORT[mst.sort]; idx.sort((a, b) => { const A = f(MR[a]), B = f(MR[b]); return (typeof A === "number" ? A - B : cmpS(A, B)) * mst.dir || a - b; }); }
+  return idx;
+}
+function renderMs() {
+  const idx = msList(), pages = Math.max(1, Math.ceil(idx.length / PER)); mst.page = Math.min(mst.page, pages - 1);
+  pinbar("#mpin", mst.pin != null ? "Showing one manuscript" : mst.set ? `Showing ${mst.setLab}` : null, () => { mst.pin = null; mst.set = null; mst.open = null; renderMs(); });
+  const tb = $("#mtbody"); tb.textContent = ""; const fr = document.createDocumentFragment();
+  idx.slice(mst.page * PER, mst.page * PER + PER).forEach(k => {
+    const m = MR[k], tr = h("tr", "row" + (m[F.st] === 2 ? " prob" : "") + (mst.pin === k ? " pinned" : "")); tr.setAttribute("aria-expanded", mst.open === k);
+    const td = (cls, txt) => h("td", cls, txt || "");
+    const sh = S[m[F.sh]]; const tsh = td("sh" + (sh ? "" : " none"), sh || `not identified (entry ${S[m[F.ent]] || "?"})`);
+    const co = td("co", rowLab(m[F.row])); co.title = S[m[F.col]];
+    const gp = td("gp"); const gi = h("i", GCLS[m[F.gp]], m[F.gp]); gi.title = GROUPS[m[F.gp]]; gp.append(gi);
+    const src = td("src", S[m[F.src]]); src.title = S[m[F.srcf]] + (S[m[F.ent]] ? ", entry " + S[m[F.ent]] : "");
+    tr.append(tsh, co, td("dt2", S[m[F.dt]]), td("ct", S[m[F.ct]]), td("sc", S[m[F.sc]]), td("pl", S[m[F.cw]]), td("pl", S[m[F.cf]]), td("ow", S[m[F.ow]]), gp, td("why", S[m[F.why]]), src);
+    onKey(tr, () => { mst.open = mst.open === k ? null : k; renderMs(); }); fr.append(tr);
+    if (mst.open === k) { const mm = h("tr", "more"), x = h("td"); x.colSpan = 11; x.append(msDetail(k)); mm.append(x); fr.append(mm); } });
+  tb.append(fr);
+  $("#mcount").textContent = `${fmt(idx.length)} manuscript${idx.length === 1 ? "" : "s"}`;
+  ["#mpager1", "#mpager2"].forEach(sel => { const pg = $(sel); pg.textContent = ""; if (pages < 2) return;
+    const btn = (t, p, dis, lab) => { const b = h("button", null, t); b.type = "button"; b.disabled = dis; if (lab) b.setAttribute("aria-label", lab); b.onclick = () => { mst.page = p; renderMs(); if (sel === "#mpager2") scrollTo("#manuscripts"); }; return b; };
+    pg.append(btn("«", 0, mst.page === 0, "First page"), btn("‹", mst.page - 1, mst.page === 0, "Previous page"), h("span", null, `page ${mst.page + 1} of ${fmt(pages)}`), btn("›", mst.page + 1, mst.page >= pages - 1, "Next page"), btn("»", pages - 1, mst.page >= pages - 1, "Last page")); });
+  $("#mhint").textContent = `Groups: ${META.groups.map(([k, n]) => `${k}, ${n[0].toLowerCase() + n.slice(1)}`).join("; ")}. Probable manuscripts are shaded and marked; they are not counted. Point to a source for its full title.`;
+}
+function msDetail(k) {
+  const m = MR[k], c = h("div", "card detail"), dl = h("dl", "dl"), add = (a, v) => { if (!v) return; dl.append(h("dt", null, a), h("dd", null, v)); };
+  add("Status", m[F.st] === 1 ? "Counted: documented in Latin Europe by 1600" : "Probable: likely in Latin Europe by 1600, not documented; not counted");
+  add("Shelfmark today", S[m[F.sh]] || "not identified"); add("Collection by 1600", rowLab(m[F.row])); add("Library or catalog", S[m[F.col]]);
+  add("Date", S[m[F.dt]] + (m[F.cy] ? ` (dated ${m[F.cy]})` : "")); add("Contents", S[m[F.ct]]); add("Scribe", S[m[F.sc]]); add("Copied where", S[m[F.cw]]);
+  add("Came from", S[m[F.cf]]); add("Owner before", S[m[F.ow]]); add("Group", `${m[F.gp]} · ${GROUPS[m[F.gp]]}`); add(m[F.st] === 1 ? "Why it counts" : "Why it is probable", S[m[F.why]]);
+  add("Source", S[m[F.srcf]] + (S[m[F.ent]] ? `, entry ${S[m[F.ent]]}` : ""));
+  c.append(dl);
+  if (msToEd[k]) { c.append(h("div", "label", "Printer's copy for")); const l = h("div", "btnline"); msToEd[k].forEach(i => { const b = h("button", "mslink", cut(`${E[i].y || ""} · ${E[i].au}, ${E[i].w}`, 120)); b.type = "button"; b.onclick = () => showEd(i); l.append(b); }); c.append(l); }
+  return c;
+}
+function resetMsFilters() { $("#mq").value = ""; $("#mrow").value = ""; $("#mgrp").value = ""; $("#mcen").value = ""; mst.pin = null; mst.set = null; mst.page = 0; mst.open = null; }
+function showMs(k) { resetMsFilters(); $("#mstat").value = MR[k][F.st] === 2 ? "12" : $("#mstat").value === "2" ? "12" : $("#mstat").value; mst.pin = k; mst.open = k; renderMs(); scrollTo("#manuscripts"); }
+function showMsSet(list, label) { resetMsFilters(); if (list.some(k => MR[k][F.st] === 2)) $("#mstat").value = "12"; mst.set = list.slice(); mst.setLab = label; renderMs(); scrollTo("#manuscripts"); }
+function filterMsRow(ri) { resetMsFilters(); $("#mrow").value = ri; $("#mstat").value = "12"; renderMs(); scrollTo("#manuscripts"); }
+["#mq", "#mstat", "#mrow", "#mgrp", "#mcen"].forEach(s => $(s).addEventListener("input", () => { mst.pin = null; mst.page = 0; mst.open = null; renderMs(); }));
+document.querySelectorAll("th button[data-msort]").forEach(b => b.onclick = () => { const k = b.dataset.msort; if (mst.sort === k) { if (mst.dir === 1) mst.dir = -1; else { mst.sort = null; mst.dir = 1; } } else { mst.sort = k; mst.dir = 1; } mst.page = 0; renderMs(); });
+
+// =====================================================================================  by collection
+function renderCollections() {
+  const t = $("#ctab"); t.textContent = "";
+  const th = h("thead"), tr0 = h("tr"); [["Collection", ""], ["Counted", "right"], ["Probable", "right"], ["", ""], ["On the map at", ""], ["Sources", ""]].forEach(([l, a]) => { const c = h("th", null, l); if (a) c.style.textAlign = a; tr0.append(c); }); th.append(tr0); t.append(th);
+  const tb = h("tbody"), mx = Math.max(...ROWS.map(r => r.c + r.p));
+  ROWS.forEach((r, i) => { const tr = h("tr", "row"); const nm = h("td", "nm"); nm.append(h("b", null, r.lab)); if (r.sub) nm.append(h("span", "sub", r.sub));
+    const bc = h("td", "bc"), bw = h("span", "cbarw"); bw.style.width = Math.max(3, (r.c + r.p) / mx * 160) + "px"; const i1 = h("i"); i1.style.width = (r.c / (r.c + r.p) * 100) + "%"; i1.style.background = "var(--lL)"; const i2 = h("i"); i2.style.width = (r.p / (r.c + r.p) * 100) + "%"; i2.style.background = "color-mix(in srgb, var(--lL) 30%, transparent)"; bw.append(i1, i2); bc.append(bw);
+    tr.append(nm, h("td", "num", fmt(r.c)), h("td", "num", r.p ? fmt(r.p) : "–"), bc, h("td", "ci", r.city), h("td", "s", r.src)); onKey(tr, () => filterMsRow(i)); tb.append(tr); });
+  const tot = h("tr", "tot"); tot.append(h("td", "nm", "Total"), h("td", "num", fmt(ROWS.reduce((a, r) => a + r.c, 0))), h("td", "num", fmt(ROWS.reduce((a, r) => a + r.p, 0))), h("td"), h("td"), h("td")); tb.append(tot);
+  t.append(tb);
+}
+const cst = { open: null };
+function renderCollectors() {
+  const tb = $("#cotbody"); tb.textContent = "";
+  COLL.forEach((c, i) => { const tr = h("tr", "row"); tr.setAttribute("aria-expanded", cst.open === i);
+    const nm = h("td", "nm"); nm.append(h("b", null, c.n)); tr.append(nm, h("td", "wh", c.h), h("td", "wh", c.a), h("td", "gm", cut(c.gm.map(g => g[0] + (g[1] ? ` (${g[1]})` : "")).join("; "), 160)), h("td", "num", String(c.acq.length)));
+    onKey(tr, () => { cst.open = cst.open === i ? null : i; renderCollectors(); }); tb.append(tr);
+    if (cst.open === i) { const m = h("tr", "more"), td = h("td"); td.colSpan = 5; const card = h("div", "card detail");
+      if (c.gm.length) { card.append(h("div", "label", "Greek manuscripts")); c.gm.forEach(g => card.append(h("p", "small", [g[0], g[1], g[2]].filter(Boolean).join(" · ")))); }
+      if (c.acq.length) { card.append(h("div", "label", "Acquisitions")); const wrap = h("div", "tablewrap"); const t = h("table", "acq"); t.innerHTML = "<thead><tr><th>Date</th><th>From</th><th>To</th><th>How</th><th>How many</th><th>Through</th><th>Books</th><th>Evidence</th></tr></thead>"; const b = h("tbody");
+        c.acq.forEach(a => { const r = h("tr"); [a[0], a[2], a[3], a[7], a[5], a[4] === "unknown" ? "" : a[4], a[6], a[8]].forEach(v => r.append(h("td", null, v || "–"))); b.append(r); }); t.append(b); wrap.append(t); card.append(wrap); }
+      if (c.fate) { const dl = h("dl", "dl"); dl.append(h("dt", null, "Where now"), h("dd", null, c.fate)); card.append(dl); }
+      card.append(srcs(c.src)); td.append(card); m.append(td); tb.append(m); } });
+}
+
+// =====================================================================================  the first editions
+E.forEach(e => e._s = fold([e.dt, e.au, e.w, e.ed.join(" "), e.pr, e.pl, e.lang, e.pc.map(p => p[0] + " " + p[1]).join(" ")].join(" ")));
+const est = { sort: null, dir: 1, open: null, pin: null, set: null, setLab: "" };
+const eper = y => !y ? 0 : y <= 1500 ? 1 : y <= 1530 ? 2 : y <= 1560 ? 3 : 4;
+function renderEds() {
+  const q = fold($("#eq").value.trim()), pr = $("#eper").value, gk = $("#egk").value, cl = $("#ecl").value, pc = $("#epc").checked;
+  let idx = est.pin != null ? [est.pin] : (est.set || E.map((_, i) => i)).filter(i => { const e = E[i];
+    return (!q || e._s.includes(q)) && (!pr || eper(e.y) === +pr) && (!gk || (gk === "y" ? e.gk === true : gk === "n" ? e.gk === false : e.gk == null)) && (!cl || e.cl === cl) && (!pc || e.pc.length); });
+  if (est.sort) idx.sort((a, b) => { const A = est.sort === "ed" ? E[a].ed.join(", ") : E[a][est.sort], B = est.sort === "ed" ? E[b].ed.join(", ") : E[b][est.sort]; return (est.sort === "y" ? (A || 9999) - (B || 9999) : cmpS(A, B)) * est.dir || a - b; });
+  pinbar("#epin", est.pin != null ? "Showing one edition" : est.set ? `Showing ${est.setLab}` : null, () => { est.pin = null; est.set = null; est.open = null; renderEds(); });
+  const tb = $("#etbody"); tb.textContent = ""; const fr = document.createDocumentFragment();
+  idx.forEach(i => { const e = E[i], tr = h("tr", "row" + (est.pin === i ? " pinned" : "")); tr.setAttribute("aria-expanded", est.open === i);
+    const dt = h("td", "dt", e.y ? String(e.y) : "–"); dt.title = e.dt;
+    const au = h("td", "au"); au.append(h("b", null, e.au), h("span", "w", e.w));
+    const ed = h("td", "wh"); ed.append(document.createTextNode(e.ed.join("; ") || "–")); if (e.gk === true) ed.append(h("span", "gkyes", "Greek"));
+    const pcs = h("td", "pc"); e.pc.forEach((p, k) => { if (k) pcs.append(h("br")); if (p[4].length) { const b = h("button", "mslink", p[0]); b.type = "button"; b.title = "In the manuscript list"; b.onclick = ev => { ev.stopPropagation(); showMs(p[4][0]); }; pcs.append(b); } else pcs.append(document.createTextNode(p[0])); });
+    tr.append(dt, au, ed, h("td", "wh", e.pr), h("td", "wh", e.pl), pcs);
+    onKey(tr, () => { est.open = est.open === i ? null : i; renderEds(); }); fr.append(tr);
+    if (est.open === i) { const m = h("tr", "more"), td = h("td"); td.colSpan = 6; td.append(edDetail(i)); m.append(td); fr.append(m); } });
+  tb.append(fr); $("#ecount").textContent = `${idx.length} of ${E.length}`;
+}
+function edDetail(i) {
+  const e = E[i], c = h("div", "card detail"), dl = h("dl", "dl"), add = (k, v) => { if (!v) return; dl.append(h("dt", null, k), h("dd", null, v)); };
+  add("Date", e.dt); add("Language", e.lang); add("Editor", e.ed.join("; ") + (e.gk === true ? " (a Greek speaker)" : e.gk === false ? " (not a Greek speaker)" : ""));
+  add("Printer", e.pr); add("Place", e.pl); add("Kind", { core: "a text written before 1453", grammar: "a grammar", liturgical: "a liturgical book", other: "other" }[e.cl] || e.cl);
+  c.append(dl);
+  if (e.pc.length) { c.append(h("div", "label", "Printer's copy")); e.pc.forEach(p => { const d = h("div", "small"); d.append(h("b", null, p[0]));
+    if (p[1]) d.append(document.createTextNode(` · ${p[1]}`)); if (p[2]) d.append(document.createTextNode(` · ${p[2]}`));
+    p[4].forEach(k => { d.append(document.createTextNode(" · ")); const b = h("button", "mslink", "in the manuscript list"); b.type = "button"; b.onclick = () => showMs(k); d.append(b); }); c.append(d); }); }
+  c.append(srcs(e.src));
+  if (e.pi != null) { const b = h("button", "linkbtn", "Show the place on the map"); b.type = "button"; b.onclick = () => { stopPlay(); setYear(null); selectPlace(e.pi); scrollTo("#map"); }; c.append(b); }
+  return c;
+}
+function showEd(i) { ["#eq", "#eper", "#egk", "#ecl"].forEach(s => $(s).value = ""); $("#epc").checked = false; est.set = null; est.pin = i; est.open = i; renderEds(); scrollTo("#editions"); }
+function showEdSet(list, label) { ["#eq", "#eper", "#egk", "#ecl"].forEach(s => $(s).value = ""); $("#epc").checked = false; est.pin = null; est.open = null; est.set = list.slice(); est.setLab = label; renderEds(); scrollTo("#editions"); }
+["#eq", "#eper", "#egk", "#ecl", "#epc"].forEach(s => $(s).addEventListener("input", () => { est.pin = null; est.open = null; renderEds(); }));
+document.querySelectorAll("th button[data-esort]").forEach(b => b.onclick = () => { const k = b.dataset.esort; if (est.sort === k) { if (est.dir === 1) est.dir = -1; else { est.sort = null; est.dir = 1; } } else { est.sort = k; est.dir = 1; } renderEds(); });
+
+// =====================================================================================  start
+if (document.fonts && document.fonts.ready) document.fonts.ready.then(() => draw());
+setYear(null); renderCharts(); renderPeople(); renderMs(); renderCollections(); renderCollectors(); renderEds();
+window.GW_TEST = { setYear, selectPlace, showMs, showEd, state, toggleLayer, renderMs };
+window.PAGE_OK = true;
+})();
+
+</script>
+</body>
+</html>
