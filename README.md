@@ -1,11 +1,11 @@
 # The Greeks Who Taught Greek to the West, 1340s–1600
 
-Version 0.10 · 4 November 2026 · work in progress
+Version 0.11 · 4 November 2026 · work in progress
 
-A work in progress by Iosif Lazaridis (@iosif_lazaridis on X), supervising research by Anthropic's Claude, from public sources.
+A work in progress by Iosif Lazaridis (@iosif_lazaridis on X), supervising research by Anthropic's Claude, from public sources and books kindly provided by Kiriakos Kazantzidis.
 
-An interactive map, a timeline and the full lists behind it: the 126 Greek speakers who taught, copied, translated and edited Greek in Latin Europe
-from the 1340s to 1600; the 8,252 Greek manuscripts documented in Latin Europe by 1600 (and 2,361 more that are probable but not
+An interactive map, a timeline and the full lists behind it: the 142 Greek speakers who taught, copied, translated and edited Greek in Latin Europe
+from the 1340s to 1600; the 8,624 Greek manuscripts documented in Latin Europe by 1600 (and 2,555 more that are probable but not
 counted), by the collection where each is documented; the 52 collectors and libraries whose acquisitions are traced; and the 419 first
 editions of Greek texts printed before 1600, with the manuscripts used as printer's copy where they are known.
 
@@ -23,6 +23,8 @@ before 1600, or a copy dated and placed in the West before 1600); each book coun
 lands under Latin rule stay the Greek world. Pinakes is not used. See the page's "How we count" section and the versions.
 
 Sources: the old inventories and printed catalogs of each library (listed on the page under "By collection"), the Dizionario Biografico degli Italiani and
-the studies cited person by person, Wikipedia's list of editiones principes in Greek, and Sicherl and Martinelli Tempesta for the printer's copies. Every record keeps its own sources. Map: Natural Earth.
+the studies cited person by person, Wikipedia's list of editiones principes in Greek, and Sicherl and Martinelli Tempesta for the printer's copies; from version 0.11
+also the books kindly provided by Kiriakos Kazantzidis (Wilson, Reynolds and Wilson, Geanakoplos, Monfasani, and the repertory of Greek copyists for Rome), used for facts only.
+Every record keeps its own sources. Map: Natural Earth.
 
-Files: `index.html` 136 KB, `data/collections.js` 90 KB, `data/editions.js` 305 KB, `data/geo.js` 71 KB, `data/key.js` 82 KB, `data/manuscripts.js` 2.1 MB, `data/map.js` 38 KB, `data/meta.js` 3 KB, `data/people.js` 172 KB, `dl/greeks-who-taught-greek-data.json` 6.2 MB, `dl/greeks-who-taught-greek-editions.csv` 190 KB, `dl/greeks-who-taught-greek-events.csv` 1.2 MB, `dl/greeks-who-taught-greek-key-manuscripts.csv` 66 KB, `dl/greeks-who-taught-greek-manuscripts.csv` 4.1 MB, `dl/greeks-who-taught-greek-people.csv` 124 KB, `dl/greeks-who-taught-greek.xlsx` 2.2 MB, `thumb/og.jpg` 105 KB.
+Files: `index.html` 141 KB, `data/collections.js` 91 KB, `data/editions.js` 306 KB, `data/geo.js` 71 KB, `data/key.js` 82 KB, `data/manuscripts.js` 2.3 MB, `data/map.js` 39 KB, `data/meta.js` 3 KB, `data/people.js` 183 KB, `dl/greeks-who-taught-greek-data.json` 6.5 MB, `dl/greeks-who-taught-greek-editions.csv` 191 KB, `dl/greeks-who-taught-greek-events.csv` 1.3 MB, `dl/greeks-who-taught-greek-key-manuscripts.csv` 66 KB, `dl/greeks-who-taught-greek-manuscripts.csv` 4.3 MB, `dl/greeks-who-taught-greek-people.csv` 132 KB, `dl/greeks-who-taught-greek.xlsx` 2.3 MB, `thumb/og.jpg` 104 KB.
